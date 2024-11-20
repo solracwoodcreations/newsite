@@ -125,6 +125,10 @@ article, .video {
     transition: transform 0.3s;
 }
 
+.icon-button.envelope:hover {
+    transform: scale(1.1);
+    }
+
 .icon-envelope {
     display: inline-flex;
     align-items: center;
