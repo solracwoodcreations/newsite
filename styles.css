@@ -94,7 +94,7 @@ article, .video {
 
 /* YouTube Button Style */
 .icon-button.youtube {
-    background-color: #0000ff;
+    background-color: #ff0000;
 }
 
 .icon-button.youtube:hover {
@@ -126,7 +126,7 @@ article, .video {
 }
 
 .icon-button.envelope {
-    background-color: #ff0000;
+    background-color: #0000ff;
 }
 .icon-button.envelope:hover {
     transform: scale(1.1);
