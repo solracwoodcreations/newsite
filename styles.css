@@ -36,6 +36,8 @@ main {
     padding: 2em;
 }
 
+
+
 section {
     margin-bottom: 2em;
 }
@@ -56,7 +58,8 @@ article, .video {
 
     
     header {
-        background-image: url("images/\ .png");
+    
+    background-image: url("images/header-bg.jpg");
         background-size: cover;
         background-position: center;
         color: #fff;
@@ -65,7 +68,7 @@ article, .video {
     }
     
     footer {
-        background-image: url("images/ .png");
+        background-image: url("images/footer-bg.jpg");
         background-size: cover;
         background-position: center;
         color: #000000;
