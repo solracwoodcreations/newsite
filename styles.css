@@ -20,7 +20,7 @@ header {
 
 h1 {
     font-family: cursive;
-    font-size: 50px;
+    font-size: 37px;
     font-style: italic;
 }
 
@@ -29,6 +29,7 @@ header nav a {
     margin: 0 1em;
     text-decoration: none;
     text-align: left;
+    
 }
 
 main {
@@ -78,8 +79,9 @@ article, .video {
     
     
     @media (max-width: 600px) {
-        .header {
+        .header  {
             padding: 30px 10px;
+            
         }
         
         .main {
