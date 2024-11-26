@@ -1,41 +1,58 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: #333;
-}
-
-header {
-    background-color: rgb(40, 83, 92);
-    color: #470aee;
-    padding: 1em;
     
-    
-}
-
-h1 {
-    font-family: cursive;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: bold;
-}
-
-header nav a {
-    color: #fff;
-    margin: 0 1em;
     text-decoration: none;
-    text-align: left;
-    
 }
+
+
+
+.navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+    background: rgb(6, 6, 6);
+    /*background-image: url("images/ solrac2.png");
+        background-size: cover;
+        background-position: center;*/
+
+}
+    
+    
+.navdiv{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.logo a{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+li a{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+
+
+
+    
+
+
 
 main {
     text-align: center;
     padding: 2em;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #070707;
 }
 
 
@@ -59,15 +76,15 @@ article, .video {
 
 
     
-    header {
+    /*header {
     
     background-image: url("images/ solrac2.png");
         background-size: cover;
         background-position: center;
         color: #070606;
-        padding: 2em;
-        text-align: center;
-    }
+        padding: 0em;
+        text-align: justify;
+    }*/
     
     footer {
         background-image: url("images/footer-bg.jpg");
