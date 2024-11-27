@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
@@ -12,28 +13,37 @@
     <link rel="stylesheet" href="styles.css">
 
     <script src="https://kit.fontawesome.com/d02d164750.js" crossorigin="anonymous"></script>
-
-
-    
-    
-
-
-
 </head>
-<body>  
-  <!-- Header Section -->
-   <nav class="navbar">
-    <div class="navdiv">
-        <div class="logo"><a href="#">Solrac Midnight Wood Creations</a> </div>
-        <ul>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#vlog">Vlog</a></li>
-            <li><a href="#photos">Photos</a></li>
-            <li><a href="#contact">Contact</a></li>
-            
-        </ul></div></nav>
+<body>
+    
+    <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a class="icon-button xmark" target="blank">
+                    <i class="fa-solid fa-xmark"></i></a>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Vlog</a></li>
+                <li><a href="#">Contact</a></li>
+    
+            </ul>
+            <ul>
+                <li><a href="#">SMWC</a></li>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Blog</a></li>
+                <li class="hideOnMobile"><a href="#">Vlog</a></li>
+                <li class="hideOnMobile"></liclass> <a href="#">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a class="icon-button bars" target="blank">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+    
+                </ul>
+                 
+        </nav>
+    
+        
 
-        <img src="images/ .png" alt="">
+
+
     
 
     <!-- Main Content -->
@@ -86,7 +96,7 @@
     
 
     <footer id="contact">
-    <h3>Follow and Connect</h3>
+    <center><h3>Follow and Connect</h3>
     
          
     
@@ -104,16 +114,20 @@
     
     <a href="mailto:solracmidnightwoodcreations@gmail.com" class="icon-button envelope" target="blank">
       <i class="fa-solid fa-envelope"></i>
-      </a>
+      </a></center>
       
     </footer>
+
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 </html>
-
-
- 
-    
-
-
-
-

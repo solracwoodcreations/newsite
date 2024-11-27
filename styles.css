@@ -1,45 +1,80 @@
-* {
-    
-    text-decoration: none;
+*{ 
+    margin: 0;
+    padding: 0;
 }
-
-
-
-.navbar {
-    padding-right: 15px;
-    padding-left: 15px;
-    background: rgb(6, 6, 6);
-    /*background-image: url("images/ solrac2.png");
-        background-size: cover;
-        background-position: center;*/
-
+body{
+    min-height: 100vh;
+    background-image: url("images/ solrac.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-    
-    
-.navdiv{
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
+nav{
+    background-color: white;
+    box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-
-.logo a{
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-}
-
-li{
+nav ul{
+    width: 100%;
     list-style: none;
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
-
-li a{
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    margin-right: 25px;
+nav li{
+    height: 50px;
 }
-
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: beige;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
 
 
 
@@ -49,16 +84,16 @@ li a{
 
 main {
     text-align: center;
-    padding: 2em;
+    
     font-family: Arial, sans-serif;
-    background-color: white;
+     
     color: #070707;
 }
 
 
 
 section {
-    margin-bottom: 2em;
+     
 }
 
 h2 {
@@ -73,46 +108,6 @@ h2 {
 article, .video {
     margin-bottom: 1
 }
-
-
-    
-    /*header {
-    
-    background-image: url("images/ solrac2.png");
-        background-size: cover;
-        background-position: center;
-        color: #070606;
-        padding: 0em;
-        text-align: justify;
-    }*/
-    
-    footer {
-        background-image: url("images/footer-bg.jpg");
-        background-size: cover;
-        background-position: center;
-        color: #000000;
-        padding: 1em;
-        text-align: center;
-    }
-    
-    
-    @media (max-width: 600px) {
-        .header  {
-            padding: 30px 10px;
-            
-        }
-        
-        .main {
-            padding: 2em;
-            }
-        
-        .footer {
-            padding: 15px 0;
-        }
-    }
-
-
-
 
 
 /* YouTube Button Style */
@@ -134,7 +129,21 @@ article, .video {
 }
 
     /* General Styles for Icon Buttons */
-.icon-button {
+.icon-button.youtube {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.icon-button.tiktok {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -155,7 +164,7 @@ article, .video {
     transform: scale(1.1);
     }
 
-.icon-envelope {
+.icon-button.envelope {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -168,4 +177,3 @@ article, .video {
     text-decoration: none;
     transition: transform 0.3s;
     }
-  
