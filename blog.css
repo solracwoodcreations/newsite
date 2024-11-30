@@ -1,5 +1,5 @@
 *{ 
-    margin: 2em;
+    margin: 0;
     padding: 0;
 }
 body{
@@ -9,4 +9,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    padding: 50px;
 }
