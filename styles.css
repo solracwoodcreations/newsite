@@ -1,8 +1,9 @@
-*{ 
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     min-height: 100vh;
     background-image: url("images/  .png");
     background-size: cover;
@@ -10,21 +11,25 @@ body{
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-nav{
+
+nav {
     background-color: white;
-    box-shadow:  3px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-nav ul{
+
+nav ul {
     width: 100%;
     list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-nav li{
+
+nav li {
     height: 50px;
 }
-nav a{
+
+nav a {
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
@@ -32,13 +37,16 @@ nav a{
     align-items: center;
     color: black;
 }
-nav a:hover{
+
+nav a:hover {
     background-color: beige;
 }
-nav li:first-child{
+
+nav li:first-child {
     margin-right: auto;
 }
-.sidebar{
+
+.sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -53,60 +61,85 @@ nav li:first-child{
     align-items: flex-start;
     justify-content: flex-start;
 }
-.sidebar li{
+
+.sidebar li {
     width: 100%;
 }
-.sidebar a{
+
+.sidebar a {
     width: 100%;
 }
-.menu-button{
+
+.menu-button {
     display: none;
 }
-@media(max-width: 800px){
-    .hideOnMobile{
+
+@media(max-width: 800px) {
+    .hideOnMobile {
         display: none;
     }
-    .menu-button{
+
+    .menu-button {
         display: block;
     }
+
 }
-@media(max-width: 400px){
-    .sidebar{
+
+@media(max-width: 400px) {
+    .sidebar {
         width: 100%;
     }
 }
 
 
 
-    
 
 
 
-main,h1 {
+
+main,
+h1 {
     text-align: center;
-    
+    padding: 25px;
+    font-size: 25px;
+
     font-family: Arial, sans-serif;
-     
+
     color: #070707;
 }
-
-
-
-section {
-     
-}
-
 h2 {
     color: black;
     font-family: cursive;
     font-style: italic;
     font-size: 35px;
-    
+
     padding-bottom: 0.5em;
 }
 
-article, .video {
-    margin-bottom: 1
+@media(max-width: 600px) {
+    section {
+        font-size: 13px;
+        padding: 1px;
+
+    }
+    h1 {
+        padding: 5px;
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+     
+}
+
+
+
+ 
+
+
+article,
+.video {
+    margin-bottom: 20px;
 }
 
 
@@ -128,7 +161,7 @@ article, .video {
     transform: scale(1.1);
 }
 
-    /* General Styles for Icon Buttons */
+/* General Styles for Icon Buttons */
 .icon-button.youtube {
     display: inline-flex;
     align-items: center;
@@ -160,9 +193,10 @@ article, .video {
 .icon-button.envelope {
     background-color: #0000ff;
 }
+
 .icon-button.envelope:hover {
     transform: scale(1.1);
-    }
+}
 
 .icon-button.envelope {
     display: inline-flex;
@@ -176,4 +210,4 @@ article, .video {
     font-size: 24px;
     text-decoration: none;
     transition: transform 0.3s;
-    }
+}
