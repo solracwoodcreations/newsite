@@ -120,15 +120,7 @@ h2 {
     margin: 10px;
     }
     
-.imcont {
-    min-heigth: 100vh;
-    padding: 50px;
-    background-image: url("images/tooth.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}   
+
     
 
 @media(max-width: 600px) {
