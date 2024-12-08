@@ -121,6 +121,7 @@ h2 {
     }
     
 .imcont {
+    min-heigth: 100vh;
     background-image: url("images/tooth.jpg");
     background-size: cover;
     background-repeat: no-repeat;
