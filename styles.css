@@ -115,6 +115,10 @@ h2 {
 
     padding-bottom: 0.5em;
 }
+.welcome {
+    color: white;
+    }
+    
 
 @media(max-width: 600px) {
     section {
