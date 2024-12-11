@@ -105,10 +105,10 @@ h1 {
 
     font-family: Arial, sans-serif;
 
-    color: white;
+    color: black;
 }
 h2 {
-    color: white;
+    color: black;
     font-family: Arial, sans-serif;
     font-style: italic;
     font-size: 35px;
@@ -117,7 +117,7 @@ h2 {
 }
 .welcome {
     font-size: 20px;
-    color: white;
+    color: black;
     margin: 10px;
     }
 
