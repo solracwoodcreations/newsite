@@ -97,8 +97,7 @@ nav li:first-child {
 
 
 
-main {
-    padding: 5px;
+main,
 h1 {
     text-align: center;
 
@@ -116,7 +115,7 @@ h2 {
     font-size: 35px;
 
     padding-bottom: 0.5em;
-}}
+}
 
 
 
