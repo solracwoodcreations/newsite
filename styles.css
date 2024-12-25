@@ -143,10 +143,11 @@ h2 {
     overflow: hidden;
 }
 
-.image-container {
-    width: 200px;
-    height: 300px;
+img {
+    width: 400px;
+    height: 500px;
 }
+
 
 
 
