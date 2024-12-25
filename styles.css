@@ -140,7 +140,12 @@ h2 {
      
 }
 .welcome {
-    margin-bottom: ;
+    overflow: hidden;
+}
+
+.image-container {
+    width: 200px;
+    height: 300px;
 }
 
 
