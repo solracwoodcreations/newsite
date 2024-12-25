@@ -148,6 +148,13 @@ img {
     height: 410px;
 }
 
+.logo {
+    img {
+        border-radius: 28%;
+    }
+}
+
+
 
 
 
