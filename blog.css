@@ -17,4 +17,7 @@ main {
 img {
     width: 200px;
     height: 210px;
+    
+    margin: 10px;
+    border-radius: 5%;
 }
