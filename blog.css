@@ -13,3 +13,8 @@ body{
 main {
     padding: 5px;
 }
+
+img {
+    width: 200px;
+    height: 300px;
+}
