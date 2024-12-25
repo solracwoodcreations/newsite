@@ -146,13 +146,9 @@ h2 {
 img {
     width: 400px;
     height: 410px;
+    border-radius: 52%;
 }
 
-.logo {
-    img {
-        border-radius: 28%;
-    }
-}
 
 
 
