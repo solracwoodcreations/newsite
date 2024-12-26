@@ -153,8 +153,9 @@ img {
 
 .logo {
     img {
-    width: 200px;
-    heighy: 220px;
+    width: 180px;
+    height: 200px;
+    border-radius: 20%px
     }}
 
 
