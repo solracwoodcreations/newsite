@@ -152,11 +152,12 @@ img {
 }
 
 .logo {
-    img {
-    width: 100px;
-    height: 150pc;
-    border-radius: 5%px
-    }}
+    background-image: url("images/ solrac2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    }
 
 
 
