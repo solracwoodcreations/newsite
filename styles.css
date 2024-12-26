@@ -151,6 +151,12 @@ img {
     border-radius: 52%;
 }
 
+.logo {
+    img {
+    width: 200px;
+    heighy: 220px;
+    }}
+
 
 
 
