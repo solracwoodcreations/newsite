@@ -117,11 +117,9 @@ h2 {
     padding-bottom: 0.5em;
 }
 
-.logo, h2{
+.logo {
     background-color: black;
-    color: white;
-    
-}
+    }
 
 
 
