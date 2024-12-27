@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <title>SolracMidnightWoodCreations</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/d02d164750.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a class="icon-button xmark" target="blank">
+                    <i class="fa-solid fa-xmark"></i></a>
+                <li><a href="ytfriends.html">YT friends</a></li>
+                <li><a href="blog1.html">Blog</a></li>
+                <li><a href="#">Vlog</a></li>
+                <li><a href="#">Contact</a></li>
+    
+            </ul>
+            <ul>
+                <li><a href="#">SMWC</a></li>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="blog1.html">Blog</a></li>
+                <li class="hideOnMobile"><a href="#">Vlog</a></li>
+                <li class="hideOnMobile"></liclass> <a href="#">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a class="icon-button bars" target="blank">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+    
+                </ul>
+                 
+        </nav>
+<!--Main Content -->
+        <main>
+            <div class="logo">
+            <img src="images/solracrb.jpeg" alt="wood project 2">
+            <br>
+            <h2>WELCOME TO SMWC WHERE I CREATE FUNCTIONAL ART</h2></div>
+            
+
+        <!-- Blog Section -->
+        <section id="blog">
+            
+            
+            
+            <article>
+                <img src="images/img1.jpeg" alt="wood project 2">
+                
+
+
+                <h1>How healing after dying at the scene of a car accident and being revived on the way to the hospital influenced my wood working journey...</h1>
+                <button class="readmore-button"><a href="blog1.html">Read More</a></button>
+
+                
+            </article>
+            <!--<article>
+                <h3>Life</h3>
+                <p>I always...</p>
+                <a href="blog2.html">Read More</a>
+            </article>
+        </section>-->
+
+        <!-- Vlog Section -->
+        <section id="vlog">
+            <!--<h2>Vlog</h2>-->
+            <div class="video">
+                <!--<h3>Useful table saw tips</h3>-->
+                
+                <!--<iframe width="305" height="200" src="https://www.youtube.com/embed/GhOga0TJT4Y?si=aEDt27cSje5BqO37" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video">-->
+                <br>
+                <!--<h3>how to change a blade on a scroll saw</h3>-->
+                
+                <!--<iframe width="305" height="200" src="https://www.youtube.com/embed/fIL3DRzRni4?si=tTgC3shJIyH7zkbl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>-->
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section id="photos">
+            <h2>Photo Gallery</h2><div class="gallery"></div>
+            <img src="images/shelf.jpg" alt="wood project 1">
+                <img src="images/tooth.jpg">
+                <img src="images/key1.jpg">
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    
+
+    
+
+    <footer id="contact">
+    <center><h3>Follow and Connect</h3>
+    
+         
+    
+    
+    <!-- YouTube Icon Button -->
+    <a href="https://www.youtube.com/@SolracMidnightWoodCreations" class="icon-button youtube" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+
+    <!-- TikTok Icon Button -->
+    <a href="https://www.tiktok.com/@midnightwoodcreations" class="icon-button tiktok" target="_blank">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
+    
+    
+    <a href="mailto:solracmidnightwoodcreations@gmail.com" class="icon-button envelope" target="blank">
+      <i class="fa-solid fa-envelope"></i>
+      </a></center>
+      
+    </footer>
+
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
+</html>
