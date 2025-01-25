@@ -101,7 +101,7 @@ main,
 h1 {
     text-align: center;
 
-    font-size: 35px;
+    font-size:  
 
     font-family: Arial, sans-serif;
     background-color: white;
@@ -113,11 +113,17 @@ h2 {
     color: black;
     font-family: Arial, sans-serif;
     font-style: italic;
-    font-size: 25px;
+    font-size:  
 
     padding-bottom: 0.5em;
     
     }
+
+p {
+    font-size: larger;
+    padding-left: 200px;
+    padding-right: 200px;
+}
 
 
 
@@ -138,10 +144,12 @@ h2 {
     h2 {
         font-size: 25px;
         color: black;
+        padding: 5px;
         
     }
     p {
         font-size: 20px;
+        padding: 5px;
         }
      
 }
