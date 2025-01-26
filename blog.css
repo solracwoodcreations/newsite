@@ -28,6 +28,7 @@ img {
 @media(max-width: 600px) {
     main {
         padding: 5px;
+        padding-bottom: 5px;
     }
     h1 {
         
