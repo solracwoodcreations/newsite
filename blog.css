@@ -11,7 +11,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 main {
-    padding: 5px;
+    padding: 50px;
 }
 
 img {
@@ -22,3 +22,21 @@ img {
     border-radius: 48%;
 
 }
+
+@media(max-width: 600px) {
+    main {
+        padding: 5px;
+    }
+    h1 {
+        
+        font-size: 25px;
+        color: black
+    }
+    p {
+        font-size: 15px;
+        
+        }
+     
+}
+
+
