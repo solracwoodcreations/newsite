@@ -31,11 +31,6 @@ img {
 }
 
 @media(max-width: 600px) {
-    main {
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-bottom: 10px;
-    }
     h1 {
         
         font-size: 25px;
@@ -43,6 +38,9 @@ img {
     }
     p {
         font-size: larger;
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-bottom: 10px;
         
         
         
