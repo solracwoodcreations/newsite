@@ -164,6 +164,15 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     
+    img {
+    width: 200px;
+    height: 210px;
+    
+    
+    border-radius: 48%;
+
+}
+    
     }
 
 
