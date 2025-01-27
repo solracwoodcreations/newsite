@@ -1,0 +1,66 @@
+.icon-button.youtube {
+    background-color: #ff0000;
+}
+
+.icon-button.youtube:hover {
+    transform: scale(1.1);
+}
+
+/* TikTok Button Style */
+.icon-button.tiktok {
+    background-color: #000000;
+}
+
+.icon-button.tiktok:hover {
+    transform: scale(1.1);
+}
+
+    /* General Styles for Icon Buttons */
+.icon-button.youtube {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.icon-button.tiktok {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.icon-button.envelope {
+    background-color: #0000ff;
+}
+.icon-button.envelope:hover {
+    transform: scale(1.1);
+    }
+
+.icon-button.envelope {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s;
+    }
