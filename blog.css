@@ -3,7 +3,7 @@
     padding-top: 5px;
 }
 body{
-    min-height: 100vh;
+    
     line-height: 1.6;
     letter-spacing: 2px;
     background-image: url("images/ .png");
@@ -11,12 +11,13 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-main {
+
+
     padding-top: 5px;
     padding-left: 100px;
     padding-right: 100px;
-}
+    }
+
 
 h1 {
     line-height: 1.1;
@@ -37,7 +38,7 @@ img {
         color: black
     }
     p {
-        font-size: larger;
+    
         padding-left: 1px;
         padding-right: 1px;
         padding-bottom: 10px;
