@@ -9,11 +9,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-
-    padding-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
     }
 
 
@@ -34,7 +29,6 @@ main,
     background-color: white;
 
     color: black;
-    padding-bottom: 0.5em;
 }
 
 
