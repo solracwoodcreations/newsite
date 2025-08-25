@@ -148,15 +148,13 @@ p {
         }
      
 }
-.welcome {
-    overflow: hidden;
-}
+
 
 img {
     width: 350px;
     height: 370px;
     border-radius: 52%;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .logo {
