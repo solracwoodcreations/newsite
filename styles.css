@@ -154,7 +154,13 @@ img {
     width: 350px;
     height: 370px;
     border-radius: 52%;
-    overflow: visible;
+    
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
 }
 
 .logo {
