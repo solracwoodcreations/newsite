@@ -264,6 +264,7 @@ article,
 }
 
 .connect {
+    h3 {
   color: white;
   background-color: grey;
-}
+}}
