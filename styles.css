@@ -204,12 +204,12 @@ article,
     transform: scale(1.1);
 }
 
-/* TikTok Button Style */
-.icon-button.tiktok {
+/* phone Button Style */
+.phone {
     background-color: #000000;
 }
 
-.icon-button.tiktok:hover {
+.phone:hover {
     transform: scale(1.1);
 }
 
@@ -228,7 +228,7 @@ article,
     transition: transform 0.3s;
 }
 
-.icon-button.tiktok {
+.phone {
     display: inline-flex;
     align-items: center;
     justify-content: center;
