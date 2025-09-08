@@ -262,3 +262,8 @@ article,
     text-decoration: none;
     transition: transform 0.3s;
 }
+
+.contact {
+  color: black;
+  background-color: grey;
+}
