@@ -1,5 +1,5 @@
 * {
-    margin-bottom: 30px;
+    margin: 0;
     padding: 0;
 }
 
@@ -273,4 +273,5 @@ article,
 .connect {
     color: white;
   background-color: grey;
+  margin-bottom: 10px;
 }
