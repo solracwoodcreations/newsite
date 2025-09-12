@@ -17,8 +17,9 @@ body {
 
 nav {
     position: fixed;
+    color: white;
     
-    background-color: white;
+    background-color: blue;
     top: 0;
     width: 100%;
     z-index: 99;
