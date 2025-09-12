@@ -15,8 +15,11 @@ body {
 
 nav {
     position: fixed;
-    margin-bottom: 5px;
+    
     background-color: white;
+    top: 0;
+    width: 100%;
+    z-index: 99;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
