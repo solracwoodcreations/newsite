@@ -202,8 +202,8 @@ img {
 }
 
 .profile-pic img {
-  width: 50px; /* Adjust size as needed */
-  height: 50px; /* Adjust size as needed */
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
   border-radius: 50%; /* Creates a circular shape for the image */
   object-fit: cover; /* Ensures the image fills the space without distortion */
 }
