@@ -105,6 +105,12 @@ nav li:first-child {
     background-color: orange;
     margin: 10px;
     padding: 5px;
+    
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
     }
 
 
