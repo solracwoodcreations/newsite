@@ -195,6 +195,35 @@ img {
     
     }
 
+.blog-meta {
+  display: flex; /* Makes the child elements (profile pic and text) line up horizontally */
+  align-items: center; /* Vertically aligns the items in the center */
+  gap: 15px; /* Adds space between the profile picture and the text */
+}
+
+.profile-pic img {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  border-radius: 50%; /* Creates a circular shape for the image */
+  object-fit: cover; /* Ensures the image fills the space without distortion */
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column; /* Stacks the author name and date vertically */
+}
+
+.author-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.post-date {
+  font-size: 12px;
+  color: #666;
+}
+
+
 
 
 
