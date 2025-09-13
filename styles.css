@@ -123,12 +123,13 @@ h2 {
     color: black;
     font-family: Arial, sans-serif;
     font-style: italic;}
+    
 
-p {
+/* p {
     font-size: larger;
     padding-left: 200px;
     padding-right: 200px;
-}
+} */
 
 .colored-word {
     color: red;
