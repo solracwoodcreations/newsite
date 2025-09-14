@@ -209,7 +209,7 @@ img {
     }
 
 .blog-meta {
-    padding: 4px;
+    padding: 5px;
   display: flex; /* Makes the child elements (profile pic and text) line up horizontally */
   /* align-items: center; Vertically aligns the items in the center */
   gap: 10px; /* Adds space between the profile picture and the text */
