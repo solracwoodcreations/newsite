@@ -103,6 +103,7 @@ nav li:first-child {
 
 .card {
     background-color: orange;
+    text-decoration: none;
     margin: 15px;
     padding: 20px;
     border-radius: 10%;
