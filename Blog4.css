@@ -1,1 +1,337 @@
-.card4 {}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-decoration: none;
+    margin: 0;
+    padding-top: 50px;
+    min-height: 100vh;
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    position: fixed;
+    color: white;
+    
+    background-color: #6495ED;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: x-large
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    background-color: lightblue;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.216);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+    }
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+.card {
+    background-color: orange;
+    text-decoration: none;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    }
+
+
+
+
+
+
+
+main,
+h1 {
+    text-align: ;
+
+      
+
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+
+    color: black;
+    padding-bottom: 0.5em;
+}
+h2 {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-style: italic;}
+
+a {
+    text-decoration: none;
+}
+
+    
+
+/* p {
+    font-size: larger;
+    padding-left: 200px;
+    padding-right: 200px;
+} */
+
+.colored-word {
+    color: red;
+    }
+
+
+
+
+    
+
+@media(max-width: 600px) {
+    section {
+        font-size: 25px;
+        padding: 1px;
+
+    }
+    h1 {
+        padding: 5px;
+        font-size: 25px;
+        color: black
+    }
+    h2 {
+        font-size: 25px;
+        color: black;
+        padding: 5px;
+        
+    }
+    p {
+        font-size: 20px;
+        padding: 5px;
+        }
+     
+}
+
+
+img {
+    border: 3px solid #333;
+    width: 350px;
+    height: 370px;
+    border-radius: 52%;
+    
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+}
+
+.logo {
+    background-image: url("images/ solrac2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    img {
+    width: 200px;
+    height: 210px;
+    
+    
+    border-radius: 48%;
+
+}
+    
+    }
+
+.blog-meta {
+    padding: 5px;
+  display: flex; /* Makes the child elements (profile pic and text) line up horizontally */
+  /* align-items: center; Vertically aligns the items in the center */
+  gap: 10px; /* Adds space between the profile picture and the text */
+}
+
+.profile-pic img {
+  width: 35px; /* Adjust size as needed */
+  height: 35px; /* Adjust size as needed */
+  border-radius: 50%; /* Creates a circular shape for the image */
+  object-fit: cover; /* Ensures the image fills the space without distortion */
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column; /* Stacks the author name and date vertically */
+}
+
+.author-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.post-date {
+  font-size: 13px;
+  color: #666;
+}
+
+
+
+
+
+
+
+ 
+
+
+article,
+.video {
+    margin-bottom: 20px;
+}
+
+
+/* YouTube Button Style */
+.icon-button.youtube {
+    background-color: #ff0000;
+}
+
+.icon-button.youtube:hover {
+    transform: scale(1.1);
+}
+
+/* phone Button Style */
+.phone {
+    background-color: #000000;
+}
+
+.phone:hover {
+    transform: scale(1.1);
+}
+
+/* General Styles for Icon Buttons */
+.icon-button.youtube {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.phone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.icon-button.envelope {
+    background-color: #0000ff;
+}
+
+.icon-button.envelope:hover {
+    transform: scale(1.1);
+}
+
+.icon-button.envelope {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.connect {
+    color: white;
+  background-color: #6495ED;
+ 
+
