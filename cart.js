@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Sample product data
     const products = [
-        { id: 1, name: 'Paper Towel Holder', price: 99.99, image: 'images/key1.jpg' },
+        { id: 1, name: 'Paper Towel Holder', price: 99.99, image: 'images/img1.jpeg' },
         { id: 2, name: 'Tobacco Pipe & Boat', price: 199.99, image: 'https://via.placeholder.com/150/e94e77/ffffff?text=Watch' },
         { id: 3, name: 'Coffee Shelf Station', price: 59.99, image: 'https://via.placeholder.com/150/f0e68c/333333?text=Speaker' },
         { id: 4, name: 'Wall Keychain Holder', price: 49.99, image: 'images/key1.jpg' }
