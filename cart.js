@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Sample product data
     const products = [
-        { id: 1, name: 'Wireless Headphones', price: 99.99, image: 'https://via.placeholder.com/150/4a90e2/ffffff?text=Headphones' },
-        { id: 2, name: 'Smart Watch', price: 199.99, image: 'https://via.placeholder.com/150/e94e77/ffffff?text=Watch' },
-        { id: 3, name: 'Portable Speaker', price: 59.99, image: 'https://via.placeholder.com/150/f0e68c/333333?text=Speaker' },
-        { id: 4, name: 'Gaming Mouse', price: 49.99, image: 'https://via.placeholder.com/150/00bfa5/ffffff?text=Mouse' }
+        { id: 1, name: 'Paper Towel Holder', price: 99.99, image: 'https://via.placeholder.com/150/4a90e2/ffffff?text=Headphones' },
+        { id: 2, name: 'Tobacco Pipe & Boat', price: 199.99, image: 'https://via.placeholder.com/150/e94e77/ffffff?text=Watch' },
+        { id: 3, name: 'Coffee Shelf Station', price: 59.99, image: 'https://via.placeholder.com/150/f0e68c/333333?text=Speaker' },
+        { id: 4, name: 'Wall Keychain Holder', price: 49.99, image: 'https://via.placeholder.com/150/00bfa5/ffffff?text=Mouse' }
     ];
 
     // Initialize cart from local storage or empty array
