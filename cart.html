@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <div class="cart-icon-container">
+            <span id="cart-count">0</span>
+            <button id="view-cart-btn">View Cart</button>
+        </div>
+    </header>
+
+    <main class="products-grid" id="products-grid">
+        <!-- Product items will be dynamically inserted here by JavaScript -->
+    </main>
+
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button id="close-cart-btn">Close</button>
+        </div>
+        <ul id="cart-items">
+            <!-- Cart items will be dynamically inserted here by JavaScript -->
+        </ul>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: $<span id="cart-total-price">0.00</span></strong>
+            </div>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
