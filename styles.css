@@ -337,11 +337,11 @@ article,
 
 article .readmore-button {
     background-color: #6495ED;
-    color: #fff;
+    text-color: #fff;
     border: none;
     padding: 0.75rem 1.5rem;
     cursor: pointer;
-    border-eadius: 5px;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
     }
     
