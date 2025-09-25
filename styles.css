@@ -344,6 +344,10 @@ article .readmore-button {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    
+a {
+    color: white;
+    }
     }
     
 article .readmore-button:hover {
