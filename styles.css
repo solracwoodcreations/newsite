@@ -20,7 +20,7 @@ nav {
     position: fixed;
     color: black;
     
-    background-color: #f7f7f7;
+    background-color: #fff;
     top: 0;
     width: 100%;
     z-index: 99;
@@ -135,7 +135,7 @@ h1 {
       
 
     font-family: Arial, sans-serif;
-    background-color: lightblue;
+    background-color: #f7f7f7;
 
     color: black;
     padding-bottom: 0.5em;
