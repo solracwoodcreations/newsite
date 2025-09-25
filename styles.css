@@ -18,9 +18,9 @@ body {
 
 nav {
     position: fixed;
-    color: white;
+    color: black;
     
-    background-color: #6495ED;
+    background-color: #f7f7f7;
     top: 0;
     width: 100%;
     z-index: 99;
@@ -105,7 +105,7 @@ nav li:first-child {
 
 .card {
 
-    background-color: orange;
+    background-color: #fff;
     text-decoration: none;
     margin: 15px;
     padding: 20px;
