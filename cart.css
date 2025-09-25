@@ -61,7 +61,7 @@ header {
 }
 
 .product-card {
-    background-color: #fff;
+    background-color: orange;
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 1rem;
