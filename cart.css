@@ -35,6 +35,11 @@ header {
     border-bottom: 1px solid var(--border-color);
 }
 
+main {
+    padding-top: 30px;
+    }
+      
+
 .cart-icon-container {
     display: flex;
     align-items: center;
