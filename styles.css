@@ -335,7 +335,7 @@ article,
     transition: transform 0.3s;
 }
 
-.readmore-button {
+article .readmore-button {
     background-color: #6495ED;
     color: #fff;
     border: none;
@@ -345,7 +345,7 @@ article,
     transition: background-color 0.3s ease;
     }
     
-.readmore-button:hover {
+article .readmore-button:hover {
       background-color: #3876c1;
     }
 
