@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Sample product data
     const products = [
-        { id: 1, name: 'Paper Towel Holder', price: 99.99, image: 'images/img1.jpeg' },
-        { id: 2, name: 'Tobacco Pipe & Boat', price: 199.99, image: 'images/IMG_4276.jpeg' },
-        { id: 3, name: 'Coffee Shelf Station', price: 59.99, image: 'images/shelf.jpg' },
-        { id: 4, name: 'Wall Keychain Holder', price: 49.99, image: 'images/key1.jpg' }
+        { id: 1, name: 'Paper Towel Holder', price: 29.99, image: 'images/img1.jpeg' },
+        { id: 2, name: 'Tobacco Pipe & Boat', price: 99.99, image: 'images/IMG_4276.jpeg' },
+        { id: 3, name: 'Coffee Shelf Station', price: 49.99, image: 'images/shelf.jpg' },
+        { id: 4, name: 'Wall Keychain Holder', price: 59.99, image: 'images/key1.jpg' }
     ];
 
     // Initialize cart from local storage or empty array
