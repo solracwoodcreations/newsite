@@ -7,7 +7,7 @@
 body {
     text-decoration: none;
     margin: 0;
-    padding-top: 60px;
+    padding-top: 70px;
     min-height: 100vh;
     background-image: url("");
     background-size: cover;
@@ -20,6 +20,7 @@ nav {
     padding: 12px;
     position: fixed;
     color: black;
+    font-size: xx-large;
     
     background-color: #fff;
     top: 0;
@@ -34,7 +35,7 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: x-large
+    font-size: x-large;
 }
 
 nav li {
