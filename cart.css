@@ -28,6 +28,9 @@ header {
     padding: 1rem 2rem;
     background-color: #fff;
     border-bottom: 1px solid var(--border-color);
+    a {
+        text-decoration: none;
+        }
 }
 
       
