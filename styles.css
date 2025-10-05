@@ -472,6 +472,19 @@ p {
 .button-primary:hover {
   background-color: #3876c1;
 }
+
+.footer {
+  background-color: #f0f8ff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+}
     
 
 
