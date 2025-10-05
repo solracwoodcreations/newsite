@@ -106,22 +106,114 @@ nav li:first-child {
     }
 }
 
+ 
+
+/* Unnest nested selectors and fix mistakes */
 .card {
-    background-color: #fff;
-    margin: 15px;
-    padding: 20px;
-    border-radius: 10%;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10%;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .card a {
-    text-decoration: none;
+  text-decoration: none;
+  color: inherit;  /* or whatever you choose */
 }
 
 .card img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Fix logo image nesting */
+.logo img {
+  width: 200px;
+  height: 210px;
+  border-radius: 48%;
+}
+
+/* General image rule for flexibility */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #333;
+  border-radius: 52%;
+}
+
+/* Video styling */
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Fix main/h1 text-align empty */
+main, h1 {
+  text-align: center;  /* or left, depending on style */
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: black;
+  padding-bottom: 0.5em;
+}
+
+/* Larger screen media query for adjustments */
+@media (min-width: 1024px) {
+  nav ul {
+    justify-content: center;
+  }
+  .card {
+    margin: 20px 40px;
+    padding: 30px;
+  }
+  /* maybe increase font size on h1/h2 */
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+}
+
+/* Sidebar show/hide rules might need tweaks */
+.sidebar {
+  display: none; /* default hidden */
+}
+
+/* Show sidebar when active class added */
+.sidebar.active {
+  display: flex;
+}
+
+/* Adjust layout in smaller screens */
+@media (max-width: 800px) {
+  .menu-button {
+    display: block;
+  }
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+/* Responsive section / typography */
+@media (max-width: 600px) {
+  section {
+    font-size: 18px;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
 }
 
 
@@ -131,22 +223,7 @@ nav li:first-child {
 
 
 
-main,
-h1 {
-    text-align: ;
-
-      
-
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-
-    color: black;
-    padding-bottom: 0.5em;
-}
-h2 {
-    color: black;
-    font-family: Arial, sans-serif;
-    font-style: italic;}
+ 
 
 a {
     text-decoration: none;
@@ -169,64 +246,12 @@ p {
 
     
 
-@media(max-width: 600px) {
-    section {
-        font-size: 25px;
-        padding: 1px;
-
-    }
-    h1 {
-        padding: 5px;
-        font-size: 25px;
-        color: black
-    }
-    h2 {
-        font-size: 25px;
-        color: black;
-        padding: 5px;
-        
-    }
-    p {
-        font-size: 20px;
-        padding: 5px;
-        }
-     
-}
+ 
 
 
-img {
-    border: 3px solid #333;
-    width: 350px;
-    height: 370px;
-    border-radius: 52%;
-    
-    display: inline-block;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    overflow: hidden;
-    white-space: pre-wrap;
-    text-overflow: ellipsis;
-}
+ 
 
-.logo {
-    
-  text-align: center;
-
-    background-image: url("images/ solrac2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    img {
-    width: 200px;
-    height: 210px;
-    
-    
-    border-radius: 48%;
-
-}
-    
-    }
+ 
 
 .blog-meta {
     padding: 5px;
@@ -266,10 +291,6 @@ img {
  
 
 
-article,
-.video {
-    margin-bottom: 20px;
-}
 
 
 .carousel-container {
