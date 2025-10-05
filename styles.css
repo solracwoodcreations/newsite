@@ -60,6 +60,10 @@ nav li:first-child {
     margin-right: auto;
 }
 
+.menu-button i {
+  color: black;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
