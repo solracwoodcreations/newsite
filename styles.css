@@ -432,55 +432,40 @@ p {
 }
 
 /* General Styles for Icon Buttons */
+
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
 .icon-button.youtube {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-    border-radius: 50%;
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-    transition: transform 0.3s;
-}
-
-.phone {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-    border-radius: 50%;
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-    transition: transform 0.3s;
+  background-color: #ff0000;
 }
 
 .icon-button.envelope {
-    background-color: #0000ff;
+  background-color: #0000ff;
 }
 
-.icon-button.envelope:hover {
-    transform: scale(1.1);
+.icon-button:hover {
+  transform: scale(1.1);
 }
 
-.icon-button.envelope {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-    border-radius: 50%;
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-    transition: transform 0.3s;
-}
+
+ 
+
+ 
+
+ 
 
 article .readmore-button {
     text-decoration: none;
