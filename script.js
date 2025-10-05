@@ -1,13 +1,14 @@
- 
+function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.add('active');
+}
 
-function showSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-        }
-        function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
-        }
+function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.remove('active');
+}
+
+ 
 
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.carousel-track');
