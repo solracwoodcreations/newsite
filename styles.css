@@ -473,32 +473,37 @@ p {
   background-color: #3876c1;
 }
 
+ 
+
 .footer {
   background-color: #f0f8ff;
   padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 10px;
+}
+
+.connect {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .footer-icons {
   display: flex;
   gap: 20px;
 }
-    
 
+/* Make sure both icons have a background */
+.icon-button.phone {
+  background-color: #0000ff;
+}
 
-.connect {
-  display: inline-block;
-  padding: 0.5em 1em;
-  text-align: center;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: bold;
-
-
-
-    color: white;
-  background-color: #6495ED;
- 
+.icon-button.envelope {
+  background-color: #0000ff;
 }
