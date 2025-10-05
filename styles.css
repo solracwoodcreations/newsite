@@ -107,23 +107,23 @@ nav li:first-child {
 }
 
 .card {
-
     background-color: #fff;
-    text-decoration: none;
     margin: 15px;
     padding: 20px;
     border-radius: 10%;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-    
-    a {
-        text-decoration: none;}
-    
-    img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-    }
-    }
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
 
 
 
