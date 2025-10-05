@@ -464,6 +464,15 @@ article .readmore-button:hover {
 }
 
 .connect {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+
+
+
     color: white;
   background-color: #6495ED;
  
