@@ -1,4 +1,5 @@
-/* Reset / Base */
+/* ================= Reset / Base Styles ================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,18 +10,19 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff;
   color: #000;
-  padding-top: 60px; /* offset for fixed nav */
+  padding-top: 60px; /* space for fixed nav */
   min-height: 100vh;
 }
 
-/* Navigation */
+/* ================= Navigation ================= */
+
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 60px;
-  background: #fff;
+  background-color: #fff;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -39,17 +41,17 @@ nav ul {
   padding: 0;
 }
 
+/* Sidebar nav (mobile menu) */
 nav ul.sidebar {
-  /* Sidebar menu hidden by default */
   flex-direction: column;
   position: fixed;
   top: 0;
   right: 0;
   width: 250px;
   height: 100vh;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   padding-top: 60px;
   transform: translateX(100%);
   transition: transform 0.3s ease;
@@ -78,7 +80,7 @@ nav ul.sidebar li a:hover {
   background: lightblue;
 }
 
-/* The “brand” / SMWC and nav links */
+/* The main nav (brand + links) */
 nav > ul:nth-child(2) {
   width: 100%;
   justify-content: flex-end;
@@ -91,7 +93,6 @@ nav > ul:nth-child(2) > li:first-child {
   cursor: pointer;
 }
 
-/* Nav links */
 nav li {
   height: 100%;
   display: flex;
@@ -112,9 +113,9 @@ nav a:hover {
   background-color: lightblue;
 }
 
-/* Menu button (hamburger) */
+/* Hamburger menu button */
 .menu-button {
-  display: none;
+  display: none; /* hidden by default, shown on small screens */
   height: 100%;
   align-items: center;
   cursor: pointer;
@@ -129,7 +130,7 @@ nav a:hover {
   font-size: 1.5rem;
 }
 
-/* Hide certain nav links on mobile */
+/* On mobile, hide some nav links, show menu button */
 @media (max-width: 800px) {
   .hideOnMobile {
     display: none;
@@ -139,25 +140,29 @@ nav a:hover {
   }
 }
 
-/* Logo */
+/* ================= Logo ================= */
+
 .logo {
-  margin: 1rem auto;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .logo img {
   width: 150px;
   height: auto;
   border-radius: 48%;
+  display: inline-block;
 }
 
 @media (min-width: 768px) {
   .logo img {
     width: 200px;
+    height: auto;
   }
 }
 
-/* Main / Headings */
+/* ================= Main / Headings ================= */
+
 main, h1 {
   text-align: center;
   background-color: #f0f8ff;
@@ -169,7 +174,8 @@ main, h1 {
   color: red;
 }
 
-/* Blog Section & Cards */
+/* ================= Blog Section & Cards ================= */
+
 #blog {
   padding: 2rem 1rem;
 }
@@ -194,6 +200,7 @@ main, h1 {
   height: auto;
   border-radius: 12px;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 
 .card h2 {
@@ -240,7 +247,7 @@ main, h1 {
   font-size: 0.85rem;
 }
 
-/* Button style for “Read More” etc. */
+/* “Read More” button style */
 .button-primary {
   background-color: #0000ff;
   color: #fff;
@@ -261,9 +268,128 @@ main, h1 {
   background-color: #0000cc;
 }
 
-/* Vlog, Videos, Gallery, Carousel — you’ll need to extend or insert your existing styles */
+/* ================= Vlog & Media ================= */
 
-/* Footer */
+video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ================= Carousel / Photo Gallery ================= */
+
+/* You’ll adapt this from your existing rules */
+.carousel-container {
+  position: relative;
+  max-width: 90vw;
+  margin: 2rem auto;
+  overflow: hidden;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-slide {
+  flex-shrink: 0;
+  width: 100%;
+  scroll-snap-align: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.carousel-navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-button {
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-button:hover {
+  background: rgba(0,0,0,0.7);
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 8px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .carousel-container {
+    max-width: 800px;
+  }
+  .carousel-navigation {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
+  .carousel-button {
+    background: rgba(0,0,0,0.3);
+  }
+  .carousel-button:hover {
+    background: rgba(0,0,0,0.5);
+  }
+  .carousel-indicators {
+    display: none;
+  }
+}
+
+/* ================= Footer ================= */
+
 .footer {
   background-color: #f0f8ff;
   padding: 20px 0;
