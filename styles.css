@@ -413,23 +413,7 @@ p {
 }
 
 
-/* YouTube Button Style */
-.icon-button.youtube {
-    background-color: #ff0000;
-}
-
-.icon-button.youtube:hover {
-    transform: scale(1.1);
-}
-
-/* phone Button Style */
-.phone {
-    background-color: #000000;
-}
-
-.phone:hover {
-    transform: scale(1.1);
-}
+ 
 
 /* General Styles for Icon Buttons */
 
