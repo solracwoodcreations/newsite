@@ -113,6 +113,43 @@ nav a:hover {
   background-color: lightblue;
 }
 
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  padding-top: 60px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.sidebar.active {
+  display: flex;
+}
+
+.sidebar li {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.sidebar a:hover {
+  background-color: lightblue;
+}
+
 /* Hamburger menu button */
 .menu-button {
   display: none; /* hidden by default, shown on small screens */
