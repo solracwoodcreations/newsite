@@ -370,6 +370,10 @@ video, iframe {
   }
 }
 
+.sidebar.active ~ ul .menu-button {
+  display: none;
+}
+
 /* Footer */
 .footer {
   background-color: #f0f8ff;
