@@ -230,14 +230,14 @@ main, h1 {
 }
 
 /* Videos */
-video, iframe {
+video {
   max-width: 300px;
   height: auto;
   display: block;
   margin: 1rem auto;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+} 
 
 /* Carousel */
 .carousel-container {
@@ -427,4 +427,24 @@ video, iframe {
 
 .icon-button:hover {
   transform: scale(1.1);
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 90%;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
