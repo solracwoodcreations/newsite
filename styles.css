@@ -231,13 +231,17 @@ main, h1 {
 
 /* Videos */
 video {
-  max-width: 300px;
+  max-width: 90%;      /* Changed from 300px to 90% width */
+  max-width: 800px;    /* Optional: max width cap */
   height: auto;
   display: block;
   margin: 1rem auto;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-} 
+}
+.video {
+  margin-bottom: 3rem; /* adds space between video blocks */
+}
 
 /* Carousel */
 .carousel-container {
