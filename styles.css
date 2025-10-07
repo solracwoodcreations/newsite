@@ -510,4 +510,32 @@ video {
   outline: 1px solid green;
 }
 
+/* Stronger alignment rules */
+.blog-meta {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.profile-pic {
+  flex-shrink: 0;
+}
+
+.profile-pic img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-info {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
  
