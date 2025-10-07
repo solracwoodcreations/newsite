@@ -190,10 +190,14 @@ main, h1 {
   border-radius: 50%;
   object-fit: cover;
 }
+
 .profile-pic {
   display: flex;
   align-items: center;
-} 
+  justify-content: center;
+  height: 100%;
+}
+
 
 .author-info {
   display: flex;
