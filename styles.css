@@ -191,6 +191,10 @@ main, h1 {
   border-radius: 50%;
   object-fit: cover;
 }
+.profile-pic {
+  display: flex;
+  align-items: center;
+}
 
 .author-info {
   display: flex;
