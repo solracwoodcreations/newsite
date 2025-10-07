@@ -192,20 +192,7 @@ main, h1 {
 }
 
 
-.profile-pic img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.author-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 0.9rem;
-  line-height: 1.2;
-}
+ 
 
 
 /*.blog-meta {
@@ -238,6 +225,23 @@ main, h1 {
   font-size: 0.9rem;
   line-height: 1.2;
 }*/
+.profile-pic img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;      /* remove inline-block gap */
+  vertical-align: middle; /* sometimes helps */
+  line-height: 1;      /* ensure no extra vertical spacing */
+}
+
+.author-info {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important; /* this should center text vertically */
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
 
 .author-name {
   font-weight: bold;
