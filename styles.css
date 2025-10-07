@@ -177,7 +177,7 @@ main, h1 {
   margin-bottom: 1rem;
 }
 
-/* Blog metadata (author & date) */
+/* Blog metadata (author & date) 
 .blog-meta {
   display: flex;
   align-items: center;
@@ -194,6 +194,21 @@ main, h1 {
 .profile-pic {
   display: flex;
   align-items: center;
+} */
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: flex-start; /* Ensures left alignment */
+}
+
+.profile-pic img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0; /* Prevents shrinking */
 }
 
 .author-info {
