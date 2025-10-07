@@ -178,9 +178,35 @@ main, h1 {
 }
 
 /* Blog metadata (author & date) */
- 
-
 .blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile-pic {
+  flex-shrink: 0;
+}
+
+.profile-pic img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+
+/*.blog-meta {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -209,7 +235,7 @@ main, h1 {
   flex-direction: column;
   font-size: 0.9rem;
   line-height: 1.2;
-}
+}*/
 
 .author-name {
   font-weight: bold;
