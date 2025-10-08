@@ -64,28 +64,30 @@
 <body>
 
     <nav>
-            <ul class="sidebar">
-                <li onclick=hideSidebar()><a class="icon-button xmark" target="blank">
-                    <i class="fa-solid fa-xmark"></i></a>
-                </li>
-                    <li><a href="blog1.html">About</a></li> 
-                <li><a href="index.html#blog">Blog</a></li>
-                
-                <li><a href="index.html#vlog">Vlog</a></li>
-                <li><a href="index.html#photos">Photos</a></li>
-    
-            </ul>
-            <ul>
-                <li><a href="index.html">SMWC</a></li>
-                <li class="hideOnMobile"><a href="blog.html">About</a></li>
-                <li class="hideOnMobile"><a href="#">Blog</a></li>
-                <li class="hideOnMobile"><a href="#">Vlog</a></li>
-                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
-                <li class="menu-button" onclick=showSidebar()><a class="icon-button bars" target="blank">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-    
-                </ul>
+             <ul class="sidebar">
+  <li onclick="hideSidebar()">
+    <a class="icon-button xmark" href="#" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </a>
+  </li>
+  <li><a href="blog1.html">About</a></li>
+  <li><a href="index.html#blog">Blog</a></li>
+  <li><a href="index.html#vlog">Vlog</a></li>
+  <li><a href="index.html#photos">Photos</a></li>
+</ul>
+
+<ul>
+  <li><a href="index.html">SMWC</a></li>
+  <li class="hideOnMobile"><a href="blog1.html">About</a></li>
+  <li class="hideOnMobile"><a href="index.html#blog">Blog</a></li>
+  <li class="hideOnMobile"><a href="index.html#vlog">Vlog</a></li>
+  <li class="hideOnMobile"><a href="index.html#photos">Photos</a></li>
+  <li class="menu-button" onclick="showSidebar()">
+    <a class="icon-button bars" href="#" aria-label="Open menu">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+  </li>
+</ul>
                  
         </nav>
     <main>
