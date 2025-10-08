@@ -177,14 +177,9 @@ main, h1 {
   margin-bottom: 1rem;
 }
 
-/* Blog metadata (author & date) */
- 
 
-
- 
-
-
-/*.blog-meta {
+/* blog meta and profile pic */ 
+.blog-meta {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -213,8 +208,9 @@ main, h1 {
   flex-direction: column;
   font-size: 0.9rem;
   line-height: 1.2;
-}*/
- 
+}
+
+/* Blog metadata (author & date) */
 
 .author-name {
   font-weight: bold;
