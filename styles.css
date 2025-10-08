@@ -486,11 +486,17 @@ video {
 }
 
 /* Match blog page author section to homepage cards */
- 
-
-.blogonly .profile-pic {
+ .blogonly .profile-pic {
    
   padding-bottom: 13px;
+}
+
+/* Remove blue background flash on sidebar icons */
+.icon-button:focus,
+.icon-button:active {
+  background: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
  
