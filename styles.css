@@ -475,15 +475,7 @@ video {
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.blog-meta {
-  outline: 1px solid red;
-}
-.profile-pic {
-  outline: 1px solid blue;
-}
-.author-info {
-  outline: 1px solid green;
-}
+ 
 
 /* Match blog page author section to homepage cards */
  .blogonly .profile-pic {
@@ -491,13 +483,7 @@ video {
   padding-bottom: 13px;
 }
 
-/* Remove blue background flash on sidebar icons */
-.icon-button:focus,
-.icon-button:active {
-  background: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
+ 
 
  
   
