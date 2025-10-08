@@ -486,45 +486,14 @@ video {
 }
 
 /* Match blog page author section to homepage cards */
-.blogonly .blog-meta {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  justify-content: center; /* centers the author section under the title */
-  margin-bottom: 1rem;
-}
+ 
 
 .blogonly .profile-pic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 1rem;
+   
+  padding-bottom: 9px;
 }
 
-.blogonly .profile-pic img {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.blogonly .author-info {
-  display: flex;
-  flex-direction: column;
-  font-size: 0.9rem;
-  line-height: 1.2;
-  align-items: flex-start; /* same as homepage card */
-}
-
-.blogonly .author-name {
-  font-weight: bold;
-  color: #333;
-}
-
-.blogonly .post-date {
-  color: #888;
-  font-size: 0.85rem;
-}
+ 
   
 
  
