@@ -178,18 +178,7 @@ main, h1 {
 }
 
 /* Blog metadata (author & date) */
-.blog-meta {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.profile-pic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+ 
 
 
  
@@ -225,23 +214,7 @@ main, h1 {
   font-size: 0.9rem;
   line-height: 1.2;
 }*/
-.profile-pic img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;      /* remove inline-block gap */
-  vertical-align: middle; /* sometimes helps */
-  line-height: 1;      /* ensure no extra vertical spacing */
-}
-
-.author-info {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important; /* this should center text vertically */
-  font-size: 0.9rem;
-  line-height: 1.2;
-}
+ 
 
 .author-name {
   font-weight: bold;
@@ -516,32 +489,6 @@ video {
   outline: 1px solid green;
 }
 
-/* Stronger alignment rules */
-.blog-meta {
-  display: flex !important;
-  align-items: center !important;
-  gap: 0.75rem !important;
-  margin-top: 1rem !important;
-  margin-bottom: 1rem !important;
-}
-
-.profile-pic {
-  flex-shrink: 0;
-}
-
-.profile-pic img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.author-info {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  font-size: 0.9rem;
-  line-height: 1.2;
-}
+ 
 
  
