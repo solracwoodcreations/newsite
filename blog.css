@@ -1,419 +1,280 @@
-/* ========== Reset & global ========== */
-* {
-  margin: 0;
-  padding: 0;
+/* --- Reset and base styles --- */
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff;
-  color: #000;
-  min-height: 100vh;
-  padding-top: 70px; /* space for fixed nav */
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5;
+  background: #fff;
+  color: #222;
 }
 
-/* ========== Navigation ========== */
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* --- NAVIGATION --- */
+
 nav {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  background-color: #fff;
-  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-  z-index: 999;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 8px 20px;
-  font-size: xx-large;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 nav ul {
-  display: flex;
-  width: 100%;
   list-style: none;
-  align-items: center;
-  justify-content: flex-end;
-  font-size: x-large;
-}
-
-nav li:first-child {
-  margin-right: auto;
-}
-
-nav li {
-  height: 50px;
-}
-
-nav a {
+  margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
-  height: 100%;
-  padding: 0 30px;
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  gap: 1rem;
 }
 
-nav a:hover {
-  background-color: lightblue;
-}
-
-/* Remove focus / default background on menu icons */
-.menu-button a,
-.sidebar a.icon-button.xmark,
-.menu-button a:focus,
-.menu-button a:active,
-.sidebar a.icon-button.xmark:focus,
-.sidebar a.icon-button.xmark:active {
-  background: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-/* ========== Sidebar / mobile menu ========== */
-.sidebar {
+nav ul.sidebar {
+  /* Sidebar is hidden by default */
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
   width: 250px;
-  display: none;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.15);
   flex-direction: column;
-  padding-top: 10px;
-  background-color: rgba(255,255,255,0.95);
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-top: 2rem;
+  display: none;
   overflow-y: auto;
+  z-index: 10000;
+  transition: transform 0.3s ease;
+  transform: translateX(100%);
 }
 
-.sidebar.active {
+nav ul.sidebar.active {
   display: flex;
+  transform: translateX(0);
 }
 
-.sidebar li {
-  width: 100%;
-  margin-bottom: 15px;
+nav ul.sidebar li {
+  margin: 0;
+  border-bottom: 1px solid #eee;
 }
 
-.sidebar a {
-  width: 100%;
-  padding: 10px 20px;
-  font-size: 1.25rem;
-  text-decoration: none;
-  color: black;
+nav ul.sidebar li:first-child {
+  /* The X icon */
+  padding: 0 1rem 1rem 1rem;
+  border: none;
+  align-self: flex-end;
 }
 
-.sidebar a:hover {
-  background-color: lightblue;
-}
-
-/* ========== Logo / hero / main ========== */
-.logo img {
-  width: 200px;
-  height: auto;
-  border-radius: 48%;
-  display: block;
-  margin: 1rem auto;
-}
-
-main, h1 {
-  text-align: center;
-  background-color: #f0f8ff;
-  color: black;
-  padding-bottom: 0.5em;
-}
-
-.colored-word {
-  color: red;
-}
-
-/* ========== Blog / Cards ========== */
-#blog {
-  padding: 2rem 1rem;
-}
-
-/* Card container */
-.card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  margin: 1.5rem auto;
-  max-width: 700px;
-  padding: 1.5rem;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 1rem;
-  object-fit: cover;
-}
-
-.card h2 {
-  margin-bottom: 0.5rem;
+nav ul.sidebar li a.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
   font-size: 1.5rem;
+  color: #222;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+nav ul.sidebar li a.icon-button:hover,
+nav ul.sidebar li a.icon-button:focus {
+  background-color: #eee;
+  outline: none;
+}
+
+nav ul.sidebar li a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #222;
+  font-weight: 500;
+}
+
+nav ul.sidebar li a:hover,
+nav ul.sidebar li a:focus {
+  background-color: #007acc;
+  color: white;
+  outline: none;
+}
+
+/* Desktop nav */
+
+nav ul:not(.sidebar) {
+  gap: 2rem;
+}
+
+nav ul:not(.sidebar) li.menu-button {
+  display: none; /* Hide menu button on desktop */
+}
+
+nav ul:not(.sidebar) li.hideOnMobile {
+  display: list-item;
+}
+
+nav ul:not(.sidebar) li a {
+  padding: 0.5rem 0.75rem;
+}
+
+/* Show menu button on mobile */
+
+@media (max-width: 768px) {
+  nav ul:not(.sidebar) li.hideOnMobile {
+    display: none;
+  }
+
+  nav ul:not(.sidebar) li.menu-button {
+    display: list-item;
+  }
+}
+
+/* --- MAIN CONTENT --- */
+
+main {
+  max-width: 700px;
+  margin: 5rem auto 3rem auto;
+  padding: 0 1rem;
+}
+
+/* Headings */
+
+h1 {
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-bottom: 1.5rem;
   color: #222;
 }
 
-/* Blog meta (author section) */
+/* Blog meta with profile pic and author info */
+
 .blog-meta {
   display: flex;
-  align-items: center;  /* vertical centering */
-  gap: 0.75rem;
-  margin-bottom: 0.4rem; /* space to paragraph */
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
 }
 
-/* Profile picture */
 .profile-pic {
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 }
 
 .profile-pic img {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
-  /* small tweak if needed — adjust top: -1px or similar */
-  position: relative;
-  top: 0;
 }
 
-/* Author info text */
 .author-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 0.9rem;
-  line-height: 1.2;
+  color: #555;
 }
 
-.author-name {
-  font-weight: bold;
-  color: #333;
+.author-info .author-name {
+  font-weight: 600;
+  color: #222;
 }
 
-.post-date {
+.author-info .post-date {
+  font-size: 0.8rem;
   color: #888;
-  font-size: 0.85rem;
 }
 
-/* Paragraph inside card */
-.card p {
-  margin-top: 0.25rem;
-  margin-bottom: 1rem;
+/* Paragraph styling */
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
   font-size: 1rem;
-  line-height: 1.5;
-  color: #444;
-}
-
-/* ========== Other elements ========== */
-/* Buttons, videos, carousel, footer, etc. — you can bring over your existing styles or adapt them */
-
-.button-primary {
-  background-color: #4a90e2;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.button-primary a {
-  color: white;
-  text-decoration: none;
-}
-
-.button-primary:hover {
-  background-color: #0000cc;
-}
-
-video {
-  max-width: 90%;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.video {
-  margin-bottom: 3rem;
-}
-
-.carousel-container {
-  position: relative;
-  max-width: 70vw;
-  margin: 2rem auto;
-  overflow: hidden;
-  background-color: #f0f8ff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.carousel-track {
-  display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.carousel-track::-webkit-scrollbar {
-  display: none;
-}
-
-.carousel-slide {
-  flex-shrink: 0;
-  width: 100%;
-  scroll-snap-align: center;
-}
-
-.carousel-slide img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-}
-
-.carousel-navigation {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 600px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.carousel-button {
-  background: rgba(0,0,0,0.5);
-  border: none;
-  color: white;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  transition: background 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.carousel-button:hover {
-  background: rgba(0,0,0,0.7);
-}
-
-.carousel-indicators {
-  display: flex;
-  gap: 8px;
-}
-
-.indicator {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: rgba(255,255,255,0.5);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.indicator.active {
-  background-color: #fff;
-}
-
-/* Footer */
-.footer {
-  background-color: #f0f8ff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.connect {
-  font-size: 1.5rem;
   color: #333;
-  margin-bottom: 10px;
+  line-height: 1.5;
 }
 
-.footer-icons {
-  display: flex;
-  gap: 20px;
+/* Blog photo */
+
+.blog-photo {
+  width: 100%;
+  max-width: 700px;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: block;
 }
+
+/* --- ICON BUTTONS: Remove blue background on click/focus --- */
 
 .icon-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  font-size: 24px;
-  color: white;
-  transition: transform 0.3s ease;
-  text-decoration: none;
+  background: transparent !important;
+  border: none !important;
+  color: inherit !important;
+  cursor: pointer;
 }
 
-.icon-button.youtube { background-color: #ff0000; }
-.icon-button.envelope { background-color: #4a90e2; }
-.icon-button.phone { background-color: #4a90e2; }
-.icon-button:hover { transform: scale(1.1); }
-
-/* ========== Media Queries ========== */
-@media (max-width: 800px) {
-  .hideOnMobile {
-    display: none;
-  }
-  .menu-button {
-    display: block;
-  }
-  nav ul {
-    justify-content: flex-end;
-  }
+.icon-button:focus,
+.icon-button:active {
+  outline: none;
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
-@media (max-width: 400px) {
-  .sidebar {
-    width: 60%; /* or adjust */
+/* Fix for the sidebar toggle icons (menu and xmark) so no background */
+
+.icon-button i {
+  pointer-events: none; /* so click triggers on the a/button itself */
+  font-size: 1.6rem;
+  color: #222;
+}
+
+/* --- Responsive tweaks --- */
+
+@media (max-width: 768px) {
+  main {
+    margin: 4rem 1rem 2rem 1rem;
+  }
+
+  nav ul.sidebar {
+    width: 200px;
   }
 }
 
-@media (min-width: 768px) {
-  .carousel-container {
-    max-width: 800px;
+@media (min-width: 1024px) {
+  nav ul.sidebar {
+    width: 280px;
   }
-  .carousel-navigation {
-    top: 50%;
-    bottom: auto;
-    transform: translateY(-50%);
-  }
-  .carousel-indicators {
-    display: none;
+
+  main {
+    max-width: 900px;
   }
 }
      
