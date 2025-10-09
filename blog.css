@@ -1,21 +1,20 @@
-/* ===== Blog Page Styles ===== */
-
-/* Basic Reset & Body */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
-  padding-top: 70px;
+  padding-top: 70px; /* Prevents navbar from covering content */
+  min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
-  color: #222;
-  line-height: 1.7;
+  background-color: #fff;
+  color: black;
 }
 
-/* ===== Navigation (same as homepage) ===== */
+/* Navigation */
 nav {
   position: fixed;
   top: 0;
@@ -43,6 +42,10 @@ nav li:first-child {
   margin-right: auto;
 }
 
+nav li {
+  height: 50px;
+}
+
 nav a {
   display: flex;
   align-items: center;
@@ -58,49 +61,132 @@ nav a:hover {
   background-color: lightblue;
 }
 
-/* ===== Main Blog Layout ===== */
-main {
-  max-width: 850px;
-  margin: 0 auto;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+/* Mobile Menu (Hide on mobile by default) */
+.menu-button {
+  display: none;
+  cursor: pointer;
 }
 
-h1 {
+.menu-button a {
   font-size: 2rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #111;
+  color: black;
 }
 
-/* ===== Blog Meta ===== */
-.blogonly {
-  text-align: center;
-  margin-bottom: 1.5rem;
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  overflow-y: auto;
 }
 
+.sidebar.active {
+  display: flex;
+}
+
+.sidebar li {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.sidebar a:hover {
+  background-color: lightblue;
+}
+
+/* Blog Content */
+main, h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  padding-bottom: 0.5em;
+  color: black;
+}
+
+.colored-word {
+  color: red;
+}
+
+#blog {
+  padding: 2rem 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 1.5rem auto;
+  max-width: 700px;
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+/* Author and Blog Meta */
 .blog-meta {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 1rem;
 }
 
 .profile-pic img {
-  width: 50px;
-  height: 50px;
+  display: block;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.profile-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
 }
 
 .author-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   font-size: 0.9rem;
-  color: #555;
+  line-height: 1.2;
 }
 
 .author-name {
@@ -113,32 +199,32 @@ h1 {
   font-size: 0.85rem;
 }
 
-/* ===== Blog Content ===== */
-.pblog p {
-  margin-bottom: 1rem;
-  font-size: 1.05rem;
-  color: #333;
+/* Button */
+.button-primary {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.pblog strong {
-  color: #000;
+.button-primary a {
+  color: white;
+  text-decoration: none;
 }
 
-.blog-photo {
-  max-width: 100%;  /* Ensures images are responsive */
-  height: auto;     /* Keeps aspect ratio intact */
-  display: block;   /* Prevents extra space below images */
-  margin: 1rem auto; /* Adds margin and centers image */
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional for aesthetics */
+.button-primary:hover {
+  background-color: #0000cc;
 }
 
-/* ===== Footer (reuse homepage feel) ===== */
+/* Footer */
 .footer {
   background-color: #f0f8ff;
   padding: 20px 0;
   text-align: center;
-  margin-top: 3rem;
 }
 
 .footer-content {
@@ -151,6 +237,7 @@ h1 {
 .connect {
   font-size: 1.5rem;
   color: #333;
+  margin-bottom: 10px;
 }
 
 .footer-icons {
@@ -171,7 +258,14 @@ h1 {
   transition: transform 0.3s ease;
 }
 
-.icon-button.envelope,
+.icon-button.youtube {
+  background-color: #ff0000;
+}
+
+.icon-button.envelope {
+  background-color: #4a90e2;
+}
+
 .icon-button.phone {
   background-color: #4a90e2;
 }
@@ -180,72 +274,44 @@ h1 {
   transform: scale(1.1);
 }
 
-/* ===== Responsive Styles ===== */
+/* Responsive Media Queries */
 
-/* Mobile First: Adjustments for smaller screens */
-@media (max-width: 414px) { /* iPhone XR */
-  main {
-    padding: 1rem; /* Adjust padding for smaller screens */
+/* Mobile - Stack nav links vertically */
+@media (max-width: 800px) {
+  nav ul {
+    display: none; /* Hide on mobile by default */
+    flex-direction: column; /* Stack links vertically */
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 60px; /* Prevent overlap with the navbar */
+    left: 0;
+    padding: 10px;
   }
 
-  h1 {
-    font-size: 1.5rem;
+  nav.active ul {
+    display: flex; /* Show links when the menu is active */
   }
 
-  .blog-meta {
-    flex-direction: column;
-    text-align: center;
+  /* Menu button visible on small screens */
+  .menu-button {
+    display: block;
   }
 
+  /* Sidebar width for mobile */
+  .sidebar {
+    width: 70%;
+  }
+
+  /* Profile Picture adjustment on mobile */
   .profile-pic img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .pblog p {
-    font-size: 1rem;  /* Adjust text size for readability */
+    width: 25px;
+    height: 25px;
   }
 }
 
-/* Larger screens (Laptop/Tablet) */
-@media (min-width: 768px) {
-  main {
-    max-width: 750px; /* Increase max-width slightly on medium screens */
-  }
-
-  h1 {
-    font-size: 2.5rem; /* Larger header on bigger screens */
-  }
-
-  .blog-meta {
-    gap: 1.5rem; /* Add more space between profile and author info */
-  }
-
-  .profile-pic img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .pblog p {
-    font-size: 1.125rem;  /* Slightly larger text for readability */
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
   }
 }
-
-/* For very large screens (Desktop/Laptop) */
-@media (min-width: 1024px) {
-  main {
-    max-width: 900px;  /* Allow for more space on large screens */
-  }
-
-  h1 {
-    font-size: 3rem; /* Significantly larger header */
-  }
-}
-     
- 
-
-
-
-
-
-
