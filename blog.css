@@ -1,280 +1,238 @@
-/* --- Reset and base styles --- */
-
-*,
-*::before,
-*::after {
+/* Reset */
+* {
   box-sizing: border-box;
-}
-
-body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 1.5;
-  background: #fff;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
   color: #222;
+  background: #fff;
+  padding-top: 60px; /* Space for fixed nav */
 }
 
-a {
-  color: #007acc;
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  text-decoration: underline;
-}
-
-/* --- NAVIGATION --- */
-
+/* NAVIGATION */
 nav {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-  z-index: 9999;
-  padding: 0.5rem 1rem;
+  height: 60px;
+  background-color: #000; /* Black background */
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  font-weight: 600;
-  font-size: 1rem;
+  padding: 0 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
-nav ul {
+/* Desktop menu */
+nav > ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 25px;
 }
 
-nav ul.sidebar {
-  /* Sidebar is hidden by default */
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 250px;
-  background: rgba(255, 255, 255, 0.98);
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.15);
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-  padding-top: 2rem;
-  display: none;
-  overflow-y: auto;
-  z-index: 10000;
-  transition: transform 0.3s ease;
-  transform: translateX(100%);
-}
-
-nav ul.sidebar.active {
-  display: flex;
-  transform: translateX(0);
-}
-
-nav ul.sidebar li {
-  margin: 0;
-  border-bottom: 1px solid #eee;
-}
-
-nav ul.sidebar li:first-child {
-  /* The X icon */
-  padding: 0 1rem 1rem 1rem;
-  border: none;
-  align-self: flex-end;
-}
-
-nav ul.sidebar li a.icon-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  color: #222;
-  background: transparent;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-nav ul.sidebar li a.icon-button:hover,
-nav ul.sidebar li a.icon-button:focus {
-  background-color: #eee;
-  outline: none;
-}
-
-nav ul.sidebar li a {
-  display: block;
-  padding: 1rem 1.5rem;
-  color: #222;
-  font-weight: 500;
-}
-
-nav ul.sidebar li a:hover,
-nav ul.sidebar li a:focus {
-  background-color: #007acc;
-  color: white;
-  outline: none;
-}
-
-/* Desktop nav */
-
-nav ul:not(.sidebar) {
-  gap: 2rem;
-}
-
-nav ul:not(.sidebar) li.menu-button {
-  display: none; /* Hide menu button on desktop */
-}
-
-nav ul:not(.sidebar) li.hideOnMobile {
+/* Hide mobile-only links on desktop */
+.hideOnMobile {
   display: list-item;
 }
 
-nav ul:not(.sidebar) li a {
-  padding: 0.5rem 0.75rem;
+/* Nav links */
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
-/* Show menu button on mobile */
-
-@media (max-width: 768px) {
-  nav ul:not(.sidebar) li.hideOnMobile {
-    display: none;
-  }
-
-  nav ul:not(.sidebar) li.menu-button {
-    display: list-item;
-  }
+nav a:hover,
+nav a:focus {
+  color: #ddd;
 }
 
-/* --- MAIN CONTENT --- */
-
-main {
-  max-width: 700px;
-  margin: 5rem auto 3rem auto;
-  padding: 0 1rem;
+/* Hamburger menu icon */
+.menu-button {
+  display: none;
+  cursor: pointer;
 }
 
-/* Headings */
-
-h1 {
-  font-weight: 700;
-  font-size: 1.9rem;
-  margin-bottom: 1.5rem;
-  color: #222;
+.menu-button .icon-button {
+  font-size: 1.5rem;
+  color: #fff;
+  background: none;
+  border: none;
 }
 
-/* Blog meta with profile pic and author info */
-
-.blog-meta {
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* hidden initially */
+  width: 250px;
+  height: 100vh;
+  background-color: #111;
+  padding-top: 60px; /* To not overlap nav */
+  box-shadow: 2px 0 5px rgba(0,0,0,0.7);
+  transition: left 0.3s ease;
+  z-index: 1100;
   display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  margin-bottom: 0.5rem;
+  flex-direction: column;
 }
 
-.profile-pic {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+.sidebar.active {
+  left: 0;
 }
 
-.profile-pic img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.sidebar li {
+  list-style: none;
+  padding: 15px 20px;
+  border-bottom: 1px solid #222;
+}
+
+.sidebar li a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
   display: block;
 }
 
+.sidebar li a:hover,
+.sidebar li a:focus {
+  background-color: #222;
+  color: #ddd;
+}
+
+/* Close icon in sidebar */
+.sidebar li:first-child {
+  padding: 10px 20px;
+  border-bottom: none;
+  align-self: flex-end;
+}
+
+.icon-button.xmark i {
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Headings and paragraphs spacing */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Blog photo styling */
+.blog-photo {
+  max-width: 100%;
+  height: auto;
+  margin: 30px 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Blog meta container */
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+/* Profile pic */
+.profile-pic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #000;
+}
+
+/* Author info stacked vertically */
 .author-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   font-size: 0.9rem;
   color: #555;
 }
 
-.author-info .author-name {
-  font-weight: 600;
-  color: #222;
+.author-name {
+  font-weight: 700;
+  color: #000;
 }
 
-.author-info .post-date {
-  font-size: 0.8rem;
+.post-date {
   color: #888;
+  font-style: italic;
+  margin-top: 2px;
 }
 
-/* Paragraph styling */
+/* Responsive adjustments */
 
-p {
-  margin-top: 0;
-  margin-bottom: 1.25rem;
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.5;
-}
-
-/* Blog photo */
-
-.blog-photo {
-  width: 100%;
-  max-width: 700px;
-  margin: 1.5rem 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  display: block;
-}
-
-/* --- ICON BUTTONS: Remove blue background on click/focus --- */
-
-.icon-button {
-  background: transparent !important;
-  border: none !important;
-  color: inherit !important;
-  cursor: pointer;
-}
-
-.icon-button:focus,
-.icon-button:active {
-  outline: none;
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
-
-/* Fix for the sidebar toggle icons (menu and xmark) so no background */
-
-.icon-button i {
-  pointer-events: none; /* so click triggers on the a/button itself */
-  font-size: 1.6rem;
-  color: #222;
-}
-
-/* --- Responsive tweaks --- */
-
-@media (max-width: 768px) {
+/* Tablet and below */
+@media (max-width: 900px) {
   main {
-    margin: 4rem 1rem 2rem 1rem;
-  }
-
-  nav ul.sidebar {
-    width: 200px;
+    padding: 0 15px;
   }
 }
 
-@media (min-width: 1024px) {
-  nav ul.sidebar {
-    width: 280px;
+/* Mobile (iPhone XR and smaller) */
+@media (max-width: 480px) {
+  /* Show hamburger */
+  .menu-button {
+    display: block;
   }
 
-  main {
-    max-width: 900px;
+  /* Hide desktop menu */
+  nav > ul:not(.sidebar) li.hideOnMobile {
+    display: none;
+  }
+
+  /* Sidebar full height */
+  .sidebar {
+    width: 75vw;
+    padding-top: 60px;
+  }
+
+  /* Adjust blog meta */
+  .blog-meta {
+    gap: 10px;
+  }
+
+  .profile-pic img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .author-info {
+    font-size: 0.85rem;
   }
 }
      
