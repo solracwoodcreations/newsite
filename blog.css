@@ -1,229 +1,200 @@
-/* Reset */
+/* ===== Blog Page Styles ===== */
+
+/* Basic Reset & Body */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Body */
 body {
+  padding-top: 70px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
+  background-color: #f9f9f9;
   color: #222;
-  background: #fff;
-  padding-top: 60px; /* Space for fixed nav */
+  line-height: 1.7;
 }
 
-/* NAVIGATION */
+/* ===== Navigation (same as homepage) ===== */
 nav {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 60px;
-  background-color: #000; /* Black background */
+  background-color: #fff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  padding: 8px 20px;
+  font-weight: bold;
+  font-size: xx-large;
 }
 
-/* Desktop menu */
-nav > ul {
+nav ul {
+  display: flex;
+  width: 100%;
   list-style: none;
-  display: flex;
   align-items: center;
-  gap: 25px;
+  justify-content: flex-end;
+  font-size: x-large;
 }
 
-/* Hide mobile-only links on desktop */
-.hideOnMobile {
-  display: list-item;
+nav li:first-child {
+  margin-right: auto;
 }
 
-/* Nav links */
 nav a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-nav a:hover,
-nav a:focus {
-  color: #ddd;
-}
-
-/* Hamburger menu icon */
-.menu-button {
-  display: none;
-  cursor: pointer;
-}
-
-.menu-button .icon-button {
-  font-size: 1.5rem;
-  color: #fff;
-  background: none;
-  border: none;
-}
-
-/* Sidebar styles */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: -250px; /* hidden initially */
-  width: 250px;
-  height: 100vh;
-  background-color: #111;
-  padding-top: 60px; /* To not overlap nav */
-  box-shadow: 2px 0 5px rgba(0,0,0,0.7);
-  transition: left 0.3s ease;
-  z-index: 1100;
   display: flex;
-  flex-direction: column;
-}
-
-.sidebar.active {
-  left: 0;
-}
-
-.sidebar li {
-  list-style: none;
-  padding: 15px 20px;
-  border-bottom: 1px solid #222;
-}
-
-.sidebar li a {
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.1rem;
-  display: block;
-}
-
-.sidebar li a:hover,
-.sidebar li a:focus {
-  background-color: #222;
-  color: #ddd;
-}
-
-/* Close icon in sidebar */
-.sidebar li:first-child {
-  padding: 10px 20px;
-  border-bottom: none;
-  align-self: flex-end;
-}
-
-.icon-button.xmark i {
-  font-size: 1.8rem;
-  color: #fff;
+  align-items: center;
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  color: black;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* MAIN CONTENT */
+nav a:hover {
+  background-color: lightblue;
+}
+
+/* ===== Main Blog Layout ===== */
 main {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 0 20px;
+  max-width: 850px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
 }
 
-/* Headings and paragraphs spacing */
 h1 {
-  margin-bottom: 20px;
   font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #111;
 }
 
-h2 {
-  margin-top: 30px;
-  margin-bottom: 12px;
-  font-weight: 600;
+/* ===== Blog Meta ===== */
+.blogonly {
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-p {
-  margin-bottom: 20px;
-  font-size: 1rem;
-  color: #333;
-}
-
-/* Blog photo styling */
-.blog-photo {
-  max-width: 100%;
-  height: auto;
-  margin: 30px 0;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Blog meta container */
 .blog-meta {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 10px;
+  justify-content: center;
+  gap: 1rem;
 }
 
-/* Profile pic */
 .profile-pic img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #000;
 }
 
-/* Author info stacked vertically */
 .author-info {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   font-size: 0.9rem;
   color: #555;
 }
 
 .author-name {
-  font-weight: 700;
-  color: #000;
+  font-weight: bold;
+  color: #333;
 }
 
 .post-date {
   color: #888;
-  font-style: italic;
-  margin-top: 2px;
+  font-size: 0.85rem;
 }
 
-/* Responsive adjustments */
+/* ===== Blog Content ===== */
+.pblog p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: #333;
+}
 
-/* Tablet and below */
-@media (max-width: 900px) {
+.pblog strong {
+  color: #000;
+}
+
+.blog-photo {
+  max-width: 100%;  /* Ensures images are responsive */
+  height: auto;     /* Keeps aspect ratio intact */
+  display: block;   /* Prevents extra space below images */
+  margin: 1rem auto; /* Adds margin and centers image */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional for aesthetics */
+}
+
+/* ===== Footer (reuse homepage feel) ===== */
+.footer {
+  background-color: #f0f8ff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.connect {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.icon-button.envelope,
+.icon-button.phone {
+  background-color: #4a90e2;
+}
+
+.icon-button:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Responsive Styles ===== */
+
+/* Mobile First: Adjustments for smaller screens */
+@media (max-width: 414px) { /* iPhone XR */
   main {
-    padding: 0 15px;
-  }
-}
-
-/* Mobile (iPhone XR and smaller) */
-@media (max-width: 480px) {
-  /* Show hamburger */
-  .menu-button {
-    display: block;
+    padding: 1rem; /* Adjust padding for smaller screens */
   }
 
-  /* Hide desktop menu */
-  nav > ul:not(.sidebar) li.hideOnMobile {
-    display: none;
+  h1 {
+    font-size: 1.5rem;
   }
 
-  /* Sidebar full height */
-  .sidebar {
-    width: 75vw;
-    padding-top: 60px;
-  }
-
-  /* Adjust blog meta */
   .blog-meta {
-    gap: 10px;
+    flex-direction: column;
+    text-align: center;
   }
 
   .profile-pic img {
@@ -231,8 +202,43 @@ p {
     height: 40px;
   }
 
-  .author-info {
-    font-size: 0.85rem;
+  .pblog p {
+    font-size: 1rem;  /* Adjust text size for readability */
+  }
+}
+
+/* Larger screens (Laptop/Tablet) */
+@media (min-width: 768px) {
+  main {
+    max-width: 750px; /* Increase max-width slightly on medium screens */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Larger header on bigger screens */
+  }
+
+  .blog-meta {
+    gap: 1.5rem; /* Add more space between profile and author info */
+  }
+
+  .profile-pic img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .pblog p {
+    font-size: 1.125rem;  /* Slightly larger text for readability */
+  }
+}
+
+/* For very large screens (Desktop/Laptop) */
+@media (min-width: 1024px) {
+  main {
+    max-width: 900px;  /* Allow for more space on large screens */
+  }
+
+  h1 {
+    font-size: 3rem; /* Significantly larger header */
   }
 }
      
