@@ -1,13 +1,11 @@
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
-  padding-top: 70px; /* Prevents navbar from covering content */
+  padding-top: 70px;
   min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fff;
@@ -61,26 +59,6 @@ nav a:hover {
   background-color: lightblue;
 }
 
-/* Mobile Menu (Hide on mobile by default) */
-.menu-button {
-  display: none;
-  cursor: pointer;
-}
-
-.menu-button a {
-  font-size: 2rem;
-  color: black;
-}
-
-/* Logo */
-.logo img {
-  width: 150px; /* Adjusted logo width */
-  height: auto;
-  border-radius: 48%;
-  display: block;
-  margin: 1rem auto;
-}
-
 /* Sidebar */
 .sidebar {
   position: fixed;
@@ -116,7 +94,30 @@ nav a:hover {
   background-color: lightblue;
 }
 
-/* Blog Content */
+/* Menu button for mobile */
+.menu-button {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-button a {
+  padding: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+/* Logo */
+.logo img {
+  width: 200px;
+  height: 210px;
+  border-radius: 48%;
+  display: block;
+  margin: 1rem auto;
+}
+
+/* Main content */
 main, h1 {
   text-align: center;
   font-family: Arial, sans-serif;
@@ -125,10 +126,12 @@ main, h1 {
   color: black;
 }
 
+/* Colored word */
 .colored-word {
   color: red;
 }
 
+/* blog */
 #blog {
   padding: 2rem 1rem;
 }
@@ -169,11 +172,12 @@ main, h1 {
   margin-bottom: 1rem;
 }
 
-/* Author and Blog Meta */
+/* Blog meta and profile pic */ 
 .blog-meta {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 0;
 }
 
 .profile-pic img {
@@ -189,6 +193,7 @@ main, h1 {
   align-items: center;
   justify-content: center;
   padding-top: 1rem;
+  padding-bottom: 13px; /* Ensures proper alignment */
 }
 
 .author-info {
@@ -198,6 +203,7 @@ main, h1 {
   line-height: 1.2;
 }
 
+/* Blog metadata (author & date) */
 .author-name {
   font-weight: bold;
   color: #333;
@@ -208,7 +214,7 @@ main, h1 {
   font-size: 0.85rem;
 }
 
-/* Button */
+/* “Read More” button style */
 .button-primary {
   background-color: #4a90e2;
   color: #fff;
@@ -229,98 +235,158 @@ main, h1 {
   background-color: #0000cc;
 }
 
+/* Videos */
+video {
+  max-width: 90%;      /* Changed from 300px to 90% width */
+  max-width: 800px;    /* Optional: max width cap */
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.video {
+  margin-bottom: 3rem; /* adds space between video blocks */
+}
+
+/* Carousel */
+.carousel-container {
+  position: relative;
+  max-width: 70vw;
+  margin: 2rem auto;
+  overflow: hidden;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-slide {
+  flex-shrink: 0;
+  width: 100%;
+  scroll-snap-align: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.carousel-navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 8px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.indicator.active {
+  background-color: #fff;
+}
+
+/* Larger screens carousel */
+@media (min-width: 768px) {
+  .carousel-container {
+    max-width: 800px;
+  }
+
+  .carousel-navigation {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
+
+  .carousel-button {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .carousel-button:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+}
+
+/* Responsive nav & sidebar */
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+
+/* Smaller sidebar on tiny screens */
+@media (max-width: 400px) {
+  .sidebar {
+    width: 41%;
+    height: 50%;
+  }
+}
+
+.sidebar.active ~ ul .menu-button {
+  display: none;
+}
+
 /* Footer */
 .footer {
   background-color: #f0f8ff;
   padding: 20px 0;
-  text-align: center;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.connect {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.footer-icons {
-  display: flex;
-  gap: 20px;
-}
-
-.icon-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
-  transition: transform 0.3s ease;
-}
-
-.icon-button.youtube {
-  background-color: #ff0000;
-}
-
-.icon-button.envelope {
-  background-color: #4a90e2;
-}
-
-.icon-button.phone {
-  background-color: #4a90e2;
-}
-
-.icon-button:hover {
-  transform: scale(1.1);
-}
-
-/* Responsive Media Queries */
-
-/* Mobile - Stack nav links vertically */
-@media (max-width: 800px) {
-  nav ul {
-    display: none; /* Hide on mobile by default */
-    flex-direction: column; /* Stack links vertically */
-    width: 100%;
-    background-color: #fff;
-    position: absolute;
-    top: 60px; /* Prevent overlap with the navbar */
-    left: 0;
-    padding: 10px;
-  }
-
-  nav.active ul {
-    display: flex; /* Show links when the menu is active */
-  }
-
-  /* Menu button visible on small screens */
-  .menu-button {
-    display: block;
-  }
-
-  /* Sidebar width for mobile */
-  .sidebar {
-    width: 70%;
-  }
-
-  /* Profile Picture adjustment on mobile */
-  .profile-pic img {
-    width: 25px;
-    height: 25px;
-  }
-}
-
-@media (max-width: 400px) {
-  .sidebar {
-    width: 100%;
-  }
-}
+  text-align
