@@ -72,6 +72,15 @@ nav a:hover {
   color: black;
 }
 
+/* Logo */
+.logo img {
+  width: 150px; /* Adjusted logo width */
+  height: auto;
+  border-radius: 48%;
+  display: block;
+  margin: 1rem auto;
+}
+
 /* Sidebar */
 .sidebar {
   position: fixed;
