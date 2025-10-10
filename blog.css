@@ -127,15 +127,19 @@ main, h1 {
 }
 
 /* Colored word */
+/*
 .colored-word {
   color: red;
-}
+} */
 
 /* blog */
+
+/*
 #blog {
   padding: 2rem 1rem;
-}
+} */
 
+/*
 .card {
   background: #fff;
   border-radius: 12px;
@@ -170,7 +174,7 @@ main, h1 {
   line-height: 1.5;
   color: #444;
   margin-bottom: 1rem;
-}
+} */
 
 /* Blog meta and profile pic */ 
 .blog-meta {
@@ -237,6 +241,7 @@ main, h1 {
 }
 
 /* “Read More” button style */
+/*
 .button-primary {
   background-color: #4a90e2;
   color: #fff;
@@ -255,13 +260,15 @@ main, h1 {
 
 .button-primary:hover {
   background-color: #0000cc;
-}
+} */
 
 /* Videos */
-video {
+
+
+/*video {
   max-width: 90%;      /* Changed from 300px to 90% width */
-  max-width: 800px;    /* Optional: max width cap */
-  height: auto;
+ /* max-width: 800px;    /* Optional: max width cap */
+ /* height: auto;
   display: block;
   margin: 1rem auto;
   border-radius: 12px;
@@ -270,9 +277,10 @@ video {
 
 .video {
   margin-bottom: 3rem; /* adds space between video blocks */
-}
+/* } 
 
 /* Carousel */
+/*
 .carousel-container {
   position: relative;
   max-width: 70vw;
@@ -290,8 +298,8 @@ video {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-  padding: 0;
+ /* scrollbar-width: none;  /* Firefox */
+/*  padding: 0;
   margin: 0;
   list-style: none;
 }
@@ -358,10 +366,10 @@ video {
 
 .indicator.active {
   background-color: #fff;
-}
+} */
 
 /* Larger screens carousel */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .carousel-container {
     max-width: 800px;
   }
@@ -383,7 +391,7 @@ video {
   .carousel-indicators {
     display: none;
   }
-}
+} */
 
 /* Responsive nav & sidebar */
 @media (max-width: 800px) {
@@ -408,7 +416,7 @@ video {
 }
 
 /* Footer */
-.footer {
+/*.footer {
   background-color: #f0f8ff;
   padding: 20px 0;
-  text-align
+  text-align: center; */
