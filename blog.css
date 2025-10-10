@@ -182,6 +182,7 @@ main, h1 {
   align-items: center;
   gap: 1rem;
   margin-bottom: 0;
+  padding-left: 10vw;
 }
 
 .profile-pic img {
