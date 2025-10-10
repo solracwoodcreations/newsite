@@ -243,11 +243,21 @@ main, h1 {
   font-size: 0.85rem;
 }
 
+/*
 .blog-photo {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}*/
+.pblog .blog-photo {
+  max-width: 600px;  /* caps the max width */
+  width: 100%;       /* makes it responsive */
+  height: auto;
+  display: block;
+  margin: 1rem auto; /* centers */
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -259,10 +269,10 @@ main, h1 {
   padding-right: 5vw;
 }
 
-.pblog p {
+/*.pblog p {
   padding-left: 5vw;
   padding-right: 5vw;
-}
+}*/
 
  
 
