@@ -457,6 +457,20 @@ main, h1 {
   display: none;
 }
 
+/* Universal landscape fix for phones */
+@media (orientation: landscape) and (max-height: 500px) {
+  .pblog {
+    max-width: 600px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .pblog .blog-photo {
+    max-width: 450px;
+    width: 90%;
+  }
+}
+
 /* Footer */
 /*.footer {
   background-color: #f0f8ff;
