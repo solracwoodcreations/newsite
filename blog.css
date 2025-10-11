@@ -476,14 +476,13 @@ main, h1 {
   transition: width 0.3s ease, max-width 0.3s ease;
 }
 
-/* Double the blog image only on mobile landscape */
+ /* Make blog image a little larger on mobile landscape */
 @media screen and (orientation: landscape) and (max-width: 768px) {
   .pblog .blog-photo {
-    max-width: none;   /* remove the 600px limit */
-    width: 200%;       /* about twice as large visually */
-    height: auto;
-    display: block;
-    margin: 0 auto;    /* keep centered */
+    width: 130%;       /* slightly larger — not huge */
+    max-width: none;   /* removes the desktop limit */
+    height: auto;      /* keeps proportions normal */
+    margin: 1rem auto; /* keep it centered */
   }
 }
 
