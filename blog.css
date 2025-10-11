@@ -470,16 +470,25 @@ main, h1 {
     width: 90%;
   }
 }
+
+/* Smooth transition */
+.pblog .blog-photo {
+  transition: width 0.3s ease, max-width 0.3s ease;
+}
+
 /* Double the blog image only on mobile landscape */
 @media screen and (orientation: landscape) and (max-width: 768px) {
   .pblog .blog-photo {
-    transform: scale(2);
-    transform-origin: center center;
+    max-width: none;   /* remove the 600px limit */
+    width: 200%;       /* about twice as large visually */
+    height: auto;
+    display: block;
+    margin: 0 auto;    /* keep centered */
   }
 }
-.pblog .blog-photo {
-  transition: transform 0.3s ease;
-}
+
+
+ 
 
  
 
