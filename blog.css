@@ -486,6 +486,19 @@ main, h1 {
   }
 }
 
+/* Mobile landscape fix: keep image fully visible and centered */
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .pblog .blog-photo {
+    width: 90vw;        /* 90% of the visible screen width */
+    height: auto;       /* keeps proportions */
+    max-height: 90vh;   /* never taller than the screen height */
+    object-fit: contain;/* ensures no cropping */
+    display: block;
+    margin: 0 auto;     /* centers the image */
+    transform: none;
+  }
+}
+
 
  
 
