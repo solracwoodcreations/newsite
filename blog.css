@@ -476,28 +476,20 @@ main, h1 {
   transition: width 0.3s ease, max-width 0.3s ease;
 }
 
- /* Make blog image a little larger on mobile landscape */
+/* Mobile landscape "zoom to fill" effect */
 @media screen and (orientation: landscape) and (max-width: 768px) {
   .pblog .blog-photo {
-    width: 130%;       /* slightly larger — not huge */
-    max-width: none;   /* removes the desktop limit */
-    height: auto;      /* keeps proportions normal */
-    margin: 1rem auto; /* keep it centered */
+    width: 100vw;           /* fills full width of screen */
+    height: 100vh;          /* fills full height */
+    object-fit: cover;      /* zooms in & crops to fill */
+    object-position: center center; /* keep center focused */
+    display: block;
+    margin: 0 auto;
+    border-radius: 0;       /* optional: remove rounding for edge-to-edge look */
   }
 }
 
-/* Mobile landscape fix: keep image fully visible and centered */
-@media screen and (orientation: landscape) and (max-width: 768px) {
-  .pblog .blog-photo {
-    width: 90vw;        /* 90% of the visible screen width */
-    height: auto;       /* keeps proportions */
-    max-height: 90vh;   /* never taller than the screen height */
-    object-fit: contain;/* ensures no cropping */
-    display: block;
-    margin: 0 auto;     /* centers the image */
-    transform: none;
-  }
-}
+ 
 
 
  
