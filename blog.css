@@ -489,6 +489,21 @@ main, h1 {
   }
 }
 
+/* Mobile landscape: make text span 80% of the viewport */
+@media screen and (orientation: landscape) and (max-width: 768px) {
+  .pblog {
+    max-width: 80vw;     /* paragraphs take up 80% of the screen width */
+    margin: 0 auto;      /* keep them centered */
+    padding-left: 0;     /* prevent double padding */
+    padding-right: 0;
+  }
+
+  .pblog p {
+    font-size: 1rem;     /* optional: adjust font size if needed */
+    line-height: 1.6;    /* keep it readable */
+  }
+}
+
  
 
 
