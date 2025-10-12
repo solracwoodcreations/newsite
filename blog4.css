@@ -1,8 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
   padding-top: 70px;
   min-height: 100vh;
@@ -107,6 +108,8 @@ nav a:hover {
   color: black;
 }
 
+
+ 
 /* Logo */
 .logo img {
   width: 200px;
@@ -388,7 +391,104 @@ video {
 .footer {
   background-color: #f0f8ff;
   padding: 20px 0;
-  text-align
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.connect {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Icon buttons */
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.icon-button.youtube {
+  background-color: #ff0000;
+}
+
+.icon-button.envelope {
+  background-color: #4a90e2;
+}
+
+.icon-button.phone {
+  background-color: #4a90e2;
+}
+
+.icon-button:hover {
+  transform: scale(1.1);
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 90%;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.blog-photo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.pblog p {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+ 
+
+/* Match blog page author section to homepage cards */
+ .blogonly .profile-pic {
+   
+  padding-bottom: 13px;
+}
+
+
+ 
+  
+
+ 
 
  
 
