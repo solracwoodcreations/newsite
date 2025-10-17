@@ -530,12 +530,12 @@ footer .icon-button:hover {
 @media screen and (orientation: landscape) and (max-width: 900px) {
   .card {
     max-width: 90vw;      /* make cards fit neatly on screen */
-    margin: 3rem auto;    /* keep them centered */
-    padding: 0.5rem;        /* slightly tighter padding for fit */
+    margin: 2.5rem auto;    /* keep them centered */
+    padding: 1rem;        /* slightly tighter padding for fit */
   }
 
   .card p{
-    line-height: 0.8rem;
+    line-height: 1rem;
     
   }
 
@@ -558,6 +558,13 @@ footer .icon-button:hover {
     
     
   }
+
+  /* “Read More” button style */
+.button-primary {
+  margin-top: 0.7rem;
+}
+
+  
 }
 
  
