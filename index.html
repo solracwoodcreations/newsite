@@ -89,7 +89,17 @@
             <!-- Card 1 -->
             <article>
                 <div class="card">
-                    <img src="images/img1.jpeg" alt="Paper towel holder story">
+                 <picture>
+  <!-- Landscape version (used when phone is sideways) -->
+  <source srcset="images/pthhoriz.jpeg" media="(orientation: landscape)">
+  
+  <!-- Portrait version (used when phone is upright) -->
+  <source srcset="images/img1.jpeg" media="(orientation: portrait)">
+  
+  <!-- Fallback image -->
+  <img src="images/img1.jpeg" alt="Paper Towel Holder">
+   </picture>
+                    
                     <h2>Paper towel holder story</h2>
                     <div class="blog-meta">
                         <div class="profile-pic"><img src="images/solracrb.jpeg" alt="Author"></div>
