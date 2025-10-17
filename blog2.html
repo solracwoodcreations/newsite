@@ -235,7 +235,18 @@
   <p>
     <strong>The Crafting Process</strong>
   </p>
-  <img src="images/IMG_4276.jpeg" alt="wood project" class="blog-photo">
+
+      <picture>
+  <!-- Landscape version (used when phone is sideways) -->
+  <source srcset="images/pipe.jpg" media="(orientation: landscape)">
+  
+  <!-- Portrait version (used when phone is upright) -->
+  <source srcset="images/IMG_4276.jpeg" media="(orientation: portrait)">
+  
+  <!-- Fallback image -->
+  <img src="images/IMG_4276.jpeg" alt="wood project 1" class="blog-photo">
+   </picture>
+  
 
   <p>
     Shaping and sanding the mango branch was both meditative and rewarding. I kept the natural curvature of the wood, allowing its form to guide the final design. The connection between the stem and bowl was the most delicate part — aligning them perfectly took patience, but seeing them fit together so naturally was worth every minute.
