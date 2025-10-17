@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  -webkit-text-size-adjust: 100%; /* Prevent iPhone landscape text enlargement */
+}
+
 body {
   padding-top: 70px;
   min-height: 100vh;
