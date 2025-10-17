@@ -534,10 +534,7 @@ footer .icon-button:hover {
     padding: 1rem;        /* slightly tighter padding for fit */
   }
 
-  .card p{
-    line-height: 1rem;
-    
-  }
+  
 
   .card img {
     border-radius: 10px;
@@ -553,7 +550,7 @@ footer .icon-button:hover {
     object-fit: cover;
   }
 
-  h2, p {
+  h1, h2, p {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     
