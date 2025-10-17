@@ -140,7 +140,17 @@
             <!-- Card 4 -->
             <article>
                 <div class="card">
-                    <img src="images/shelf.jpg" alt="Coffee shelf station">
+                 <picture>
+  <!-- Landscape version (used when phone is sideways) -->
+  <source srcset="images/shelfhoriz.jpeg" media="(orientation: landscape)">
+  
+  <!-- Portrait version (used when phone is upright) -->
+  <source srcset="images/shelf.jpg" media="(orientation: portrait)">
+  
+  <!-- Fallback image -->
+  <img src="images/shelf.jpg" alt="Red mahogany coffee shelf station">
+   </picture>
+                    
                     <h2>Coffee shelf station</h2>
                     <div class="blog-meta">
                         <div class="profile-pic"><img src="images/solracrb.jpeg" alt="Author"></div>
