@@ -540,7 +540,7 @@ footer .icon-button:hover {
     border-radius: 10px;
     object-fit: cover;
     max-height: 60vh;/* prevents image from overtaking the screen */
-    margin-bottom: 0.5rem;
+  
   }
 
     .profile-pic img {
