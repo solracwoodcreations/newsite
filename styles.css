@@ -531,7 +531,7 @@ footer .icon-button:hover {
   .card {
     max-width: 90vw;      /* make cards fit neatly on screen */
     margin: 2.5rem auto;    /* keep them centered */
-    padding: 1rem;        /* slightly tighter padding for fit */
+    padding: 0.5rem;        /* slightly tighter padding for fit */
   }
 
   .card p{
