@@ -530,8 +530,8 @@ footer .icon-button:hover {
 @media screen and (orientation: landscape) and (max-width: 900px) {
   .card {
     max-width: 90vw;      /* make cards fit neatly on screen */
-    margin: 2.5rem auto;    /* keep them centered */
-    padding: 0.5rem;        /* slightly tighter padding for fit */
+    margin: 2rem auto;    /* keep them centered */
+    padding: 1rem;        /* slightly tighter padding for fit */
   }
 
   .card p{
@@ -542,7 +542,8 @@ footer .icon-button:hover {
   .card img {
     border-radius: 10px;
     object-fit: cover;
-    max-height: 60vh;     /* prevents image from overtaking the screen */
+    max-height: 60vh;/* prevents image from overtaking the screen */
+    margin-bottom: 0.5rem;
   }
 
     .profile-pic img {
