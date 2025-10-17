@@ -525,6 +525,28 @@ footer .icon-button:hover {
   padding-bottom: 13px;
 }
 
+/* Landscape fix — safe for phones, matches clone behavior */
+@media screen and (orientation: landscape) and (max-width: 900px) {
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 12px;
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
  
 
  
