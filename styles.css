@@ -525,25 +525,24 @@ footer .icon-button:hover {
   padding-bottom: 13px;
 }
 
-/* Landscape fix — safe for phones, matches clone behavior */
+ 
+/* Landscape (horizontal phone) adjustments */
 @media screen and (orientation: landscape) and (max-width: 900px) {
+  .card {
+    max-width: 90vw;      /* make cards fit neatly on screen */
+    margin: 1rem auto;    /* keep them centered */
+    padding: 1rem;        /* slightly tighter padding for fit */
+  }
+
   .card img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    object-position: center;
-    border-radius: 12px;
+    border-radius: 10px;
+    object-fit: cover;
+    max-height: 60vh;     /* prevents image from overtaking the screen */
   }
 
-  .carousel-slide img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    object-position: center;
-  }
-
-  body {
-    overflow-x: hidden;
+  h1, h2, p {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
