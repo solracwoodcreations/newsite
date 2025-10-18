@@ -508,6 +508,14 @@ footer .icon-button:hover {
   height: 100%;
   border: none;
 }
+.video-container iframe {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+}
 
 .blog-photo {
   max-width: 100%;
