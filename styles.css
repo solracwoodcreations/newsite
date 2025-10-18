@@ -297,9 +297,6 @@ main > p {
   position: relative;
 }
 
- 
-
-/* Make iframe fill the box exactly */
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -308,7 +305,13 @@ main > p {
   height: 100%;
   border: none;
   display: block;
+  transform: scale(1.3);
+  transform-origin: center;
 }
+
+ 
+
+ 
 
 /* Fix Vimeo video zoom / black borders */
 .video-container iframe[src*="vimeo"] {
