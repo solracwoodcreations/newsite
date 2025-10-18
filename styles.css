@@ -593,6 +593,12 @@ footer .icon-button:hover {
   object-fit: contain;
 }
 
+    .video-container {
+    max-width: 90vw;
+    max-height: 85vh;
+    aspect-ratio: 16 / 9; /* makes it fit nicely like the carousel */
+  }
+
   .sidebar {
   width: 15%;
   height: 100vh;
