@@ -310,6 +310,13 @@ main > p {
   display: block;
 }
 
+/* Fix Vimeo video zoom / black borders */
+.video-container iframe[src*="vimeo"] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* For local <video> files: make the <video> element behave like the iframe */
 .video-container.local-video video {
   width: 100%;
