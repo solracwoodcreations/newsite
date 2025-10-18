@@ -533,7 +533,8 @@ footer .icon-button:hover {
     margin: 2rem auto;    /* keep them centered */
     padding: 1rem;        /* slightly tighter padding for fit */
   }
-  .card img {
+
+  .card img:not(.profile-pic img) {
     margin-bottom: 0.3rem;
     display: block;
     border-radius: 10px;
