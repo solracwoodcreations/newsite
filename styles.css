@@ -319,6 +319,13 @@ main > p {
   border: none;
 }
 
+/* Match video sizing to carousel style */
+.video-container {
+  width: 70vw;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;  /* shorter, landscape-friendly shape */
+}
+
 /* Carousel */
 .carousel-container {
   position: relative;
