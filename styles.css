@@ -323,7 +323,7 @@ main > p {
 .video-container {
   width: 70vw;
   max-width: 700px;
-  aspect-ratio: 16 / 9;  /* shorter, landscape-friendly shape */
+  aspect-ratio: 4 / 5;  /* shorter, landscape-friendly shape */
 }
 
 /* Carousel */
