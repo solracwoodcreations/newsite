@@ -428,6 +428,15 @@ video {
   display: none;
 }
 
+/* Portrait view — taller, fills space better */
+@media screen and (orientation: portrait) {
+  .video-container iframe {
+    aspect-ratio: 9 / 16;
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* Footer */
 .footer {
   background-color: #f0f8ff;
