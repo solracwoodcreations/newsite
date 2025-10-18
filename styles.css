@@ -557,6 +557,23 @@ footer .icon-button:hover {
   }
 }
 
+/* === DEBUG OUTLINES FOR .card ELEMENTS ONLY === */
+.card, 
+.card * {
+  outline: 1px solid rgba(255, 0, 0, 0.6); /* red default outline */
+}
+
+/* Give key elements inside cards unique colors for clarity */
+.card               { outline: 2px solid rgba(255, 0, 0, 0.9); }   /* outer card box */
+.card img, 
+.card picture       { outline: 2px solid rgba(0, 0, 255, 0.6); }   /* images */
+.card h2            { outline: 2px solid rgba(0, 128, 0, 0.6); }   /* headings */
+.card p             { outline: 2px solid rgba(255, 165, 0, 0.6); } /* paragraphs */
+.card .blog-meta    { outline: 2px solid rgba(128, 0, 128, 0.6); } /* meta wrapper */
+.card .profile-pic  { outline: 2px solid rgba(255, 0, 255, 0.6); } /* profile pic box */
+.card .author-info  { outline: 2px solid rgba(0, 255, 255, 0.6); } /* author info box */
+.card .button-primary { outline: 2px solid rgba(165, 42, 42, 0.6); } /* read more button */
+
  
 
  
