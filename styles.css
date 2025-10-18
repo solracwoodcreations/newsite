@@ -534,6 +534,7 @@ footer .icon-button:hover {
     padding: 1rem;        /* slightly tighter padding for fit */
   }
   .card img {
+    display: block;
     border-radius: 10px;
     object-fit: cover;
     max-height: 60vh;/* prevents image from overtaking the screen */
