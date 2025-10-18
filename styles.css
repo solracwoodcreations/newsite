@@ -558,8 +558,12 @@ footer .icon-button:hover {
   }
 
   /* “Read More” button style */
-.button-primary {
+/*.button-primary {
   margin-top: 0.15rem;
+}*/
+
+  .card p {
+  margin-bottom: 0.15rem;
 }
 
   
