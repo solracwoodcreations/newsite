@@ -538,6 +538,12 @@ footer .icon-button:hover {
     object-fit: cover;
     max-height: 60vh;/* prevents image from overtaking the screen */
   }
+
+  .card picture {
+  display: contents;
+}
+
+  
   .profile-pic img {
     width: 35px;
     height: 35px;
