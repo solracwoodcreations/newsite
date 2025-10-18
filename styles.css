@@ -564,6 +564,17 @@ footer .icon-button:hover {
   margin-top: 0.15rem;
   margin-bottom: 0.15rem;
   }
+
+  .carousel-container {
+  max-width: 90vw;
+  max-height: 85vh;
+}
+
+.carousel-slide img {
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
+}
 }
 
  
