@@ -285,18 +285,19 @@ main > p {
   text-align: center;
 }
 
-/* The shadowed box you wanted — exact visual size reference */
 .video-container {
-  width: 300px;                           /* desired visible width */
-  height: 450px;                          /* desired visible height */
-  margin: 1.5rem auto;                    /* center horizontally and give vertical spacing */
-  overflow: hidden;                       /* clips children to border-radius */
-  border-radius: 12px;                    /* rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.10); /* the shadow defining the visual size */
-  background: #000;                       /* black behind video to avoid gaps */
-  display: block;
+  width: 85vw;          /* 85% of viewport width */
+  max-width: 300px;     /* max width cap */
+  aspect-ratio: 2 / 3;  /* keeps correct shape */
+  margin: 1.5rem auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.10);
+  background: #000;
   position: relative;
 }
+
+ 
 
 /* Make iframe fill the box exactly */
 .video-container iframe {
