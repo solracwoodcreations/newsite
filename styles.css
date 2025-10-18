@@ -533,45 +533,28 @@ footer .icon-button:hover {
     margin: 2rem auto;    /* keep them centered */
     padding: 1rem;        /* slightly tighter padding for fit */
   }
-
-  
-
   .card img {
     border-radius: 10px;
     object-fit: cover;
     max-height: 60vh;/* prevents image from overtaking the screen */
-  
   }
-
-    .profile-pic img {
+  .profile-pic img {
     width: 35px;
     height: 35px;
     border-radius: 50%;  /* restore circular image */
     object-fit: cover;
   }
-
   h1, h2, p {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    
-    
   }
-
-  /* “Read More” button style */
-/*.button-primary {
-  margin-top: 0.15rem;
-}*/
-
   .card p {
   margin-bottom: 0.15rem;
-}
-
+  }
   .card h2 {
   margin-top: 0.15rem;
   margin-bottom: 0.15rem;
-}
-
-  
+  }
 }
 
  
