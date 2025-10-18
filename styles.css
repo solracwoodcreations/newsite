@@ -575,6 +575,11 @@ footer .icon-button:hover {
   max-height: 85vh;
   object-fit: contain;
 }
+
+  .sidebar {
+  width: 28%;
+  height: 100vh;
+}
 }
 
  
