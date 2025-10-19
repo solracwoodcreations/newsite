@@ -227,6 +227,7 @@ main > p {
   display: block;
   width: 35px;
   height: 35px;
+  border: 1px solid black;
   border-radius: 50%;
   object-fit: cover;
 }
