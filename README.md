@@ -1,99 +1,85 @@
-# 📱 Built 100% on iPhone with GitHub
+# 📱 Website Built 100% on iPhone with GitHub
 
-![Mobile Workflow Badge](https://img.shields.io/badge/Built%20on-iPhone%20XR-blue?style=flat-square&logo=apple&logoColor=white)
+![Built on iPhone XR](https://img.shields.io/badge/Built%20on-iPhone%20XR-blue?style=flat-square&logo=apple&logoColor=white)
 ![No Laptop Needed](https://img.shields.io/badge/No-Laptop-red?style=flat-square)
-![Video Hosting](https://img.shields.io/badge/Video%20Uploads-Working%20Perfectly-green?style=flat-square)
+![Video Hosting](https://img.shields.io/badge/Video%20Uploads-Working-green?style=flat-square)
 
 ---
 
-## 🌐 solracmidnightwoodcreations.com
+## 🌐 Live Site
 
-Welcome to my personal handcrafted website, built entirely from my **iPhone XR** using **GitHub** — no desktop, no external apps, and no video converters.
+Check out the site live here:  
+🔗 [solracmidnightwoodcreations.com](https://solracmidnightwoodcreations.com)
 
-📍 **Live site**: [https://solracmidnightwoodcreations.com](https://solracmidnightwoodcreations.com)
-
----
-
-## ⚙️ How I Built This Website
-
-This website is managed 100% from my phone — no laptop, no desktop. Everything is created, uploaded, edited, and updated using:
-
-- **GitHub in Safari** on iPhone XR
-- GitHub’s built-in file editor (inline and dev edit modes)
-- GitHub's "Record video" upload feature
-
-### 🎥 How I Upload Videos (Using Just My Phone)
-
-- I use the “Record video” feature directly in GitHub
-- The videos save as `.MOV` files
-- I rename the extension to `.MP4` (no converter needed!)
-- The videos play perfectly in browsers like Safari and Chrome
-
-> 🔄 It’s a simple trick — renaming the file lets the browser treat it as a standard MP4
+This is a personal handcrafted website, built entirely from my **iPhone XR** using **GitHub** — no desktop, no apps, and no converters.
 
 ---
 
-## 📷 What's on the Site
+## 🛠 How I Manage Code (In-Place on GitHub)
 
-- 🖼️ A **photo carousel** to show off custom wood art
-- 📝 **Blog cards** that link to full blog entries
-- 🛍️ A **products page** with sample prices and layout (see disclaimer below)
-- 🎬 30-second video clips showing wood pieces in action
-- 🌐 A custom domain via Namecheap for just ~$11/year
+- I manage code and make edits **in-place** using GitHub’s mobile tools (in Safari on iPhone XR)
+- I use GitHub’s **inline editor** (the pencil icon) for most content updates
+- For video uploads:
+  - I use GitHub’s **Record video** feature to upload 30-second clips
+  - It saves the file with a long name like `1234567891234567.mov`
+  - I open GitHub’s **dev editor** to rename the file to something like `clip1.mp4`
+  - No video converter needed — just change `.mov` to `.mp4` and it works in the browser!
 
----
-
-## 🛠 How I Edit Everything on Mobile
-
-I use two ways to edit files on GitHub:
-
-### 1. Inline Edit (📝 Pencil Icon)
-- Quick changes like renaming a file or tweaking text
-
-### 2. Dev Edit
-- Opens a better full-page editor in the browser
-- Good for working with multiple files or making bigger changes
-
-Everything happens right in Safari on my iPhone. No apps needed.
+Everything is handled directly on my phone. No laptop or external apps needed.
 
 ---
 
-## 📏 Video Recording Limits
+## ✨ Site Features
 
-- 1080p = Max 15 seconds per clip
-- 720p = Up to 30 seconds
-- I use 720p to maximize video length within GitHub’s limits
+- 🖼️ Photo carousel to showcase handmade wooden creations
+- 📝 Blog cards linking to individual blog pages
+- 🎬 30-second video clips recorded in real-time and embedded from GitHub
+- 🛍️ A product gallery layout (see disclaimer below)
+- 🌍 Custom domain via Namecheap
 
 ---
 
-## ⚠️ Disclaimer: This is a Demo Site
+## 🧪 Video Upload Workflow
 
-This website is a **personal design and development project**.  
-The **products, prices, and checkout buttons** shown on the Products page are for **display only**.
+- **1080p setting** = 15 seconds max recording
+- **720p setting** = 30 seconds max
+- I use 720p so I can upload longer clips to GitHub
 
-> 🛑 **No products are for sale.**  
-> 🛒 The checkout button does not lead to a real store.  
-> 💻 This is not a commercial website.
+I record videos right inside GitHub and upload them directly. Just rename the file and it's good to go — plays perfectly on desktop and mobile browsers.
 
-This project is for learning, showcasing design layout, and demonstrating what’s possible using **GitHub + iPhone only**.
+---
+
+## 🛒 Products Page Disclaimer
+
+> ⚠️ **This is a demo site. No products are for sale.**  
+> The products, prices, and checkout buttons are for layout and design showcase only.  
+> This site does **not process payments**, and no commercial transactions are being conducted.
+
+This section is meant to demonstrate what a storefront *could* look like using only mobile tools — nothing here is connected to a real checkout.
 
 ---
 
 ## 💡 Why I Built This
 
-To prove you can build a fully functional and visually rich website:
-- Without a laptop
-- Without paid software
-- With just a phone and a free GitHub account
+To prove that you can build, design, and host a fully functional website **using only your phone** — no paid software, no fancy setup.
 
-It's also a great way to practice frontend design, mobile workflows, and content creation — all from your pocket.
+This project is about:
+- Learning by doing
+- Exploring mobile-only workflows
+- Creating a real online presence for handmade art
+- Sharing what's possible with just GitHub and a little creativity
+
+---
+
+## 🤝 Want to Build One Too?
+
+Feel free to **fork this repo**, remix the code, and try building your own site using GitHub Pages + mobile only!
+
+If you’ve got questions or want to connect, visit the site or reach out here:  
+👉 [github.com/solracwoodcreations](https://github.com/solracwoodcreations)
 
 ---
 
-## 👋 Want to Try It Yourself?
 
-Feel free to fork this repo and use the ideas in your own site!
 
-If you’ve got questions or want to collaborate, visit [solracmidnightwoodcreations.com](https://solracmidnightwoodcreations.com) or find me on GitHub: [@solracwoodcreations](https://github.com/solracwoodcreations)
-
----
+ 
