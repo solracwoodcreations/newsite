@@ -29,6 +29,14 @@ Everything is handled directly on my phone. No laptop or external apps needed.
 
 ---
 
+## 🤔 Why Not Just Use a Laptop?
+
+**Laptop? Nah, I prefer my pocket powerhouse.**  
+Building this website on an iPhone XR isn’t just a challenge — it’s a statement.  
+Who says you need a laptop to get stuff DONE? 😂🚀
+
+---
+
 ## ✨ Site Features
 
 - 🖼️ Photo carousel to showcase handmade wooden creations
