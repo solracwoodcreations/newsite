@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     checkoutBtn.addEventListener('click', () => {
-        alert('Thank you for your purchase!');
+        alert('DEMO ONLY - NO PURCHASE AVAILABLE!');
         cart = []; // Clear the cart
         saveCartToLocalStorage();
         updateCartDisplay();
