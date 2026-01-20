@@ -80,3 +80,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize the carousel
     updateCarousel();
 });
+
+// Email signup form
+const form = document.getElementById('signupForm');
+const thankYou = document.getElementById('thankYouMessage');
+
+if (form) { // make sure it exists
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent default form submission
+    form.style.display = 'none';
+    thankYou.style.display = 'block';
+  });
+}
