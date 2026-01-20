@@ -616,6 +616,46 @@ footer .icon-button:hover {
 }
 }
 
+.signup-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f2f2f2;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+  }
+
+  .signup-form h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .signup-form input[type="email"] {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+
+  .signup-form button {
+    padding: 12px 20px;
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .signup-form button:hover {
+    background-color: #005fcc;
+  }
+
+
  
 
  
