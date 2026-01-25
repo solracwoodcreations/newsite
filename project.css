@@ -288,6 +288,53 @@ main, h1 {
   }
 }
 
+/* === Materials & Tools: Technical Callout === */
+.pblog h2 + ul {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.25rem 1.75rem;
+  background-color: #111;
+  color: #f2f2f2;
+  border: 2px dashed #cfa96b; /* workshop tag feel */
+  border-radius: 8px;
+  list-style: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Items */
+.pblog h2 + ul li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* Labels */
+.pblog h2 + ul strong {
+  color: #cfa96b;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Section title: break narrative */
+.pblog h2 {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #111;
+}
+
+/* Optional: subtle divider above */
+.pblog h2::before {
+  content: "— SHOP NOTES —";
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
  
 
 
