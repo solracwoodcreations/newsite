@@ -261,7 +261,8 @@ main, h1 {
 /* Landscape fix — match clone site behavior */
 @media screen and (orientation: landscape) and (max-width: 900px) {
   .pblog .blog-photo {
-    width: 100%;
+   /* width: 100%; */
+    width: 80vw;
     height: 50vh;
     object-fit: contain;
     object-position: center;
